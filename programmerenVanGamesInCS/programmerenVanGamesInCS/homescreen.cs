@@ -21,9 +21,18 @@ namespace programmerenVanGamesInCS
         {
             Lingo myForm = new Lingo();
             myForm.ShowDialog();
+        }
 
-            
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Pong myForm = new Pong();
+            myForm.ShowDialog();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FlappyBird myForm = new FlappyBird();
+            myForm.ShowDialog();
         }
     }
 }

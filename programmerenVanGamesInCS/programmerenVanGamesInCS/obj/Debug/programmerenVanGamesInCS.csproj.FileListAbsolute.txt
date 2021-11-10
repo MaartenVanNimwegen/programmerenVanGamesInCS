@@ -1,0 +1,11 @@
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\bin\Debug\programmerenVanGamesInCS.exe.config
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\bin\Debug\programmerenVanGamesInCS.exe
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\bin\Debug\programmerenVanGamesInCS.pdb
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.csproj.AssemblyReference.cache
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.Form1.resources
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.Properties.Resources.resources
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.csproj.GenerateResource.cache
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.csproj.CoreCompileInputs.cache
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.exe
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.pdb
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.Lingo.resources

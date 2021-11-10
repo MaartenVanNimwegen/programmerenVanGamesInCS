@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace programmerenVanGamesInCS
 {
-    public partial class Form1 : Form
+    public partial class Lingo : Form
     {
-        public Form1()
+        public Lingo()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Lingo myForm = new Lingo();
-            myForm.ShowDialog();
-
-            
-
         }
     }
 }

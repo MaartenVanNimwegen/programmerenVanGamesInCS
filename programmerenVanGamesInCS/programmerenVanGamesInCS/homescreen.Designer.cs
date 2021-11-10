@@ -1,7 +1,7 @@
 ﻿
 namespace programmerenVanGamesInCS
 {
-    partial class Form1
+    partial class homescreen
     {
         /// <summary>
         /// Required designer variable.

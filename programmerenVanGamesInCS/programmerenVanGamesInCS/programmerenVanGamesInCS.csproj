@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FlappyBird.resx">
+      <DependentUpon>FlappyBird.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="homescreen.resx">
       <DependentUpon>homescreen.cs</DependentUpon>
     </EmbeddedResource>

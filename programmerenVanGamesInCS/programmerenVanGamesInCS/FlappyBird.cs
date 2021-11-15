@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FlappyBird
+namespace programmerenVanGamesInCS
 {
-    public partial class FormBig : Form
+    public partial class FlappyBird : Form
     {
         // Variables
         private bool is_running = false;
@@ -20,7 +20,7 @@ namespace FlappyBird
         private int score = 0;
 
         // Game load
-        public FormBig()
+        public FlappyBird()
         {
             InitializeComponent();
             is_running = true;

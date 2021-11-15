@@ -1,7 +1,7 @@
 ﻿
-namespace FlappyBird
+namespace programmerenVanGamesInCS
 {
-    partial class FormBig
+    partial class FlappyBird
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace FlappyBird
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox FormBackground;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBig));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.Player = new System.Windows.Forms.PictureBox();
             this.object_bush_1 = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
@@ -90,14 +90,14 @@ namespace FlappyBird
             FormBackground.BackColor = System.Drawing.Color.Transparent;
             FormBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             FormBackground.Cursor = System.Windows.Forms.Cursors.Cross;
-            FormBackground.Image = global::FlappyBird.Properties.Resources.Background;
+            FormBackground.Image = global::programmerenVanGamesInCS.Properties.Resources.Background;
             FormBackground.Name = "FormBackground";
             FormBackground.TabStop = false;
             // 
             // Player
             // 
             this.Player.BackColor = System.Drawing.Color.Transparent;
-            this.Player.Image = global::FlappyBird.Properties.Resources.Bird;
+            this.Player.Image = global::programmerenVanGamesInCS.Properties.Resources.Bird;
             resources.ApplyResources(this.Player, "Player");
             this.Player.Name = "Player";
             this.Player.TabStop = false;
@@ -105,21 +105,21 @@ namespace FlappyBird
             // object_bush_1
             // 
             this.object_bush_1.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_1.Image = global::FlappyBird.Properties.Resources.Bush;
+            this.object_bush_1.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
             resources.ApplyResources(this.object_bush_1, "object_bush_1");
             this.object_bush_1.Name = "object_bush_1";
             this.object_bush_1.TabStop = false;
             // 
             // Ground
             // 
-            this.Ground.Image = global::FlappyBird.Properties.Resources.Ground1;
+            this.Ground.Image = global::programmerenVanGamesInCS.Properties.Resources.Ground1;
             resources.ApplyResources(this.Ground, "Ground");
             this.Ground.Name = "Ground";
             this.Ground.TabStop = false;
             // 
             // CloseButton
             // 
-            this.CloseButton.Image = global::FlappyBird.Properties.Resources.Xbutton;
+            this.CloseButton.Image = global::programmerenVanGamesInCS.Properties.Resources.Xbutton;
             resources.ApplyResources(this.CloseButton, "CloseButton");
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.TabStop = false;
@@ -128,7 +128,7 @@ namespace FlappyBird
             // object_bush_2
             // 
             this.object_bush_2.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_2.Image = global::FlappyBird.Properties.Resources.Bush;
+            this.object_bush_2.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
             resources.ApplyResources(this.object_bush_2, "object_bush_2");
             this.object_bush_2.Name = "object_bush_2";
             this.object_bush_2.TabStop = false;
@@ -136,7 +136,7 @@ namespace FlappyBird
             // object_bush_3
             // 
             this.object_bush_3.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_3.Image = global::FlappyBird.Properties.Resources.Bush;
+            this.object_bush_3.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
             resources.ApplyResources(this.object_bush_3, "object_bush_3");
             this.object_bush_3.Name = "object_bush_3";
             this.object_bush_3.TabStop = false;

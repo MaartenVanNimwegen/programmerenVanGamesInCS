@@ -9,3 +9,4 @@ C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGames
 C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.Lingo.resources
 C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.homescreen.resources
 C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.FlappyBird.resources
+C:\Users\maart\source\repos\clones\programmerenVanGamesInCS\programmerenVanGamesInCS\programmerenVanGamesInCS\obj\Debug\programmerenVanGamesInCS.csproj.AssemblyReference.cache

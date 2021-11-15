@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LingoGame.cs" />
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
     </Compile>

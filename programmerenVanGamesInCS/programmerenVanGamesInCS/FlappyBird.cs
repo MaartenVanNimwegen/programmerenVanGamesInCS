@@ -15,7 +15,7 @@ namespace programmerenVanGamesInCS
         // Variables
         private bool is_running = false;
         private int speed = 10;
-        const int gravity = 4;
+        const int gravity = 7;
         private bool display_out = false;
         private int score = 0;
 
@@ -253,7 +253,7 @@ namespace programmerenVanGamesInCS
 
         private void EXIT_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Close();
         }
     }
 }

@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FormBackground.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="Player.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 360</value>
@@ -233,33 +233,6 @@
   </data>
   <data name="&gt;&gt;Ground.ZOrder" xml:space="preserve">
     <value>19</value>
-  </data>
-  <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, 15</value>
-  </data>
-  <data name="CloseButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 32</value>
-  </data>
-  <data name="CloseButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="CloseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Name" xml:space="preserve">
-    <value>CloseButton</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
-    <value>20</value>
   </data>
   <data name="object_bush_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>660, 542</value>
@@ -769,7 +742,7 @@
     <value>NoControl</value>
   </data>
   <data name="PILLAR5A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, -2</value>
+    <value>1231, -4</value>
   </data>
   <data name="PILLAR5A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>

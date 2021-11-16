@@ -35,7 +35,6 @@ namespace programmerenVanGamesInCS
             this.Player = new System.Windows.Forms.PictureBox();
             this.object_bush_1 = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
-            this.CloseButton = new System.Windows.Forms.PictureBox();
             this.object_bush_2 = new System.Windows.Forms.PictureBox();
             this.object_bush_3 = new System.Windows.Forms.PictureBox();
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
@@ -65,7 +64,6 @@ namespace programmerenVanGamesInCS
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).BeginInit();
             this.ExitPanel.SuspendLayout();
@@ -118,14 +116,6 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.Ground, "Ground");
             this.Ground.Name = "Ground";
             this.Ground.TabStop = false;
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Image = global::programmerenVanGamesInCS.Properties.Resources.Xbutton;
-            resources.ApplyResources(this.CloseButton, "CloseButton");
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.TabStop = false;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // object_bush_2
             // 
@@ -299,7 +289,6 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CausesValidation = false;
-            this.ControlBox = false;
             this.Controls.Add(this.ScorePosition);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PILLAR6B);
@@ -320,8 +309,8 @@ namespace programmerenVanGamesInCS
             this.Controls.Add(this.Player);
             this.Controls.Add(this.object_bush_1);
             this.Controls.Add(this.Ground);
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(FormBackground);
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.Name = "FlappyBird";
@@ -330,7 +319,6 @@ namespace programmerenVanGamesInCS
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).EndInit();
             this.ExitPanel.ResumeLayout(false);
@@ -354,8 +342,6 @@ namespace programmerenVanGamesInCS
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox CloseButton;
         private System.Windows.Forms.PictureBox Ground;
         private System.Windows.Forms.PictureBox object_bush_1;
         private System.Windows.Forms.PictureBox Player;

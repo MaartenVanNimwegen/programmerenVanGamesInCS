@@ -62,16 +62,16 @@ namespace programmerenVanGamesInCS
             this.Row4Letter2 = new System.Windows.Forms.Label();
             this.Row4Letter1 = new System.Windows.Forms.Label();
             this.GamePanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HintBtn = new System.Windows.Forms.Button();
             this.TimeLabel = new System.Windows.Forms.Label();
             this.WordLabel = new System.Windows.Forms.Label();
             this.RoundLabel = new System.Windows.Forms.Label();
             this.LettersPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).BeginInit();
             this.GamePanel.SuspendLayout();
-            this.LettersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LettersPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LingoImg
@@ -161,6 +161,7 @@ namespace programmerenVanGamesInCS
             this.textBox1.TabStop = false;
             this.textBox1.Text = "A....";
             this.textBox1.UseWaitCursor = true;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Row1Letter1
             // 
@@ -200,7 +201,6 @@ namespace programmerenVanGamesInCS
             this.Row1Letter3.TabIndex = 8;
             this.Row1Letter3.Text = ".";
             this.Row1Letter3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row1Letter3.Click += new System.EventHandler(this.Row1Letter3_Click);
             // 
             // Row1Letter4
             // 
@@ -214,7 +214,6 @@ namespace programmerenVanGamesInCS
             this.Row1Letter4.TabIndex = 9;
             this.Row1Letter4.Text = ".";
             this.Row1Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row1Letter4.Click += new System.EventHandler(this.Row1Letter4_Click);
             // 
             // Row1Letter5
             // 
@@ -254,7 +253,6 @@ namespace programmerenVanGamesInCS
             this.Row2Letter4.TabIndex = 14;
             this.Row2Letter4.Text = ".";
             this.Row2Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row2Letter4.Click += new System.EventHandler(this.label2_Click);
             // 
             // Row2Letter3
             // 
@@ -320,7 +318,6 @@ namespace programmerenVanGamesInCS
             this.Row3Letter4.TabIndex = 19;
             this.Row3Letter4.Text = ".";
             this.Row3Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row3Letter4.Click += new System.EventHandler(this.label7_Click);
             // 
             // Row3Letter3
             // 
@@ -386,7 +383,6 @@ namespace programmerenVanGamesInCS
             this.Row5Letter4.TabIndex = 29;
             this.Row5Letter4.Text = ".";
             this.Row5Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row5Letter4.Click += new System.EventHandler(this.label12_Click);
             // 
             // Row5Letter3
             // 
@@ -452,7 +448,6 @@ namespace programmerenVanGamesInCS
             this.Row4Letter4.TabIndex = 24;
             this.Row4Letter4.Text = ".";
             this.Row4Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row4Letter4.Click += new System.EventHandler(this.label17_Click);
             // 
             // Row4Letter3
             // 
@@ -507,6 +502,18 @@ namespace programmerenVanGamesInCS
             this.GamePanel.Name = "GamePanel";
             this.GamePanel.Size = new System.Drawing.Size(383, 452);
             this.GamePanel.TabIndex = 31;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(342, 96);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
             // HintBtn
             // 
@@ -597,19 +604,6 @@ namespace programmerenVanGamesInCS
             this.LettersPanel.Name = "LettersPanel";
             this.LettersPanel.Size = new System.Drawing.Size(599, 619);
             this.LettersPanel.TabIndex = 32;
-            this.LettersPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(342, 96);
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
             // 
             // Lingo
             // 
@@ -637,8 +631,8 @@ namespace programmerenVanGamesInCS
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).EndInit();
             this.GamePanel.ResumeLayout(false);
             this.GamePanel.PerformLayout();
-            this.LettersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.LettersPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

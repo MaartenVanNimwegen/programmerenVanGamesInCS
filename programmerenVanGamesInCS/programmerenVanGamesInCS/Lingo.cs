@@ -33,6 +33,19 @@ namespace programmerenVanGamesInCS
             LettersPanel.Visible = false;
             GamePanel.Visible = false;
         }
+        private void ClearLetterField()
+        {
+            for (int y = 0; y < 5; y++)
+            {
+                for (int x = 0; x < 5; x++)
+                {
+                    string LetterBoxStr = "Row" + y.ToString() + "Letter" + x.ToString();
+                    var LetterBox = this.GetType().GetField(LetterBoxStr).GetValue(this);
+
+                    /*LetterBox.Text = ".";*/
+                }
+            }
+        }
 
         private void ShowGameScreen()
         {
@@ -43,57 +56,48 @@ namespace programmerenVanGamesInCS
         
 
 
+        private bool LingoWord(LingoGame Lingo)
+        {
+            string NextWord = Lingo.NewWord();
 
+            string FirstLetter = NextWord.Substring(0, 1);
+            Row1Letter1.Text = FirstLetter;
+
+            Lingo.CurrentWord = NextWord;
+            Lingo.CurrentRow = 1;
+            Lingo.CurrentFirstLetter = FirstLetter;
+
+            Lingo.AcceptingInput = true;
+            Lingo.TimerPlaying = true;
+
+
+            System.Threading.Thread.Sleep(9999999);
+            return false;
+        }
+        private void LingoRound(LingoGame Lingo)
+        {
+            bool Guessed = LingoWord(Lingo);
+        }
 
         private void DutchBtn_Click(object sender, EventArgs e)
         {
             ClearScreen();
             ShowGameScreen();
+
+            LingoGame Lingo = NewGame("dutch");
+
+            LingoRound(Lingo);
         }
 
-        private LingoGame NewGame()
+        private LingoGame NewGame(string Language)
         {
-            LingoGame myLingoGame = new LingoGame();
+            LingoGame NewLingoGame = new LingoGame();
+            NewLingoGame.Language = Language;
 
-            return myLingoGame;
+            return NewLingoGame;
         }
 
-        private void Start()
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Row1Letter4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Row1Letter3_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

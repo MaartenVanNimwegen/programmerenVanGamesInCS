@@ -15,7 +15,7 @@ namespace programmerenVanGamesInCS
         // Variables
         private bool is_running = false;
         private int speed = 10;
-        const int gravity = 10;
+        const int gravity = 4;
         private bool display_out = false;
         private int score = 0;
 
@@ -26,7 +26,7 @@ namespace programmerenVanGamesInCS
             is_running = true;
             display_out = false;
             ExitPanel.Hide();
-            Player.Location = new Point(200, 200);
+            Player.Location = new Point(300, 200);
             TimerTick.Interval = 20;
             score = 0;
             label2.Location = new Point(37, 24);
@@ -61,7 +61,7 @@ namespace programmerenVanGamesInCS
         // Move the bushes to the left and reset them if they leave the game space
         private void moveBushes()
         {
-            int bush_speed = 20;
+            int bush_speed = 10;
 
             // Move object 1
             if (object_bush_1.Location.X < 0)
@@ -196,7 +196,7 @@ namespace programmerenVanGamesInCS
         {
             if (e.KeyValue == (int)Keys.Space)
             {
-                Player.Top -= 60;
+                Player.Top -= 30;
             }
         }
 

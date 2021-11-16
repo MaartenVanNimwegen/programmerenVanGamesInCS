@@ -40,6 +40,9 @@ namespace programmerenVanGamesInCS
             this.object_bush_3 = new System.Windows.Forms.PictureBox();
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
             this.ExitPanel = new System.Windows.Forms.Panel();
+            this.FinalScore = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Restart = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EXIT = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,9 +60,6 @@ namespace programmerenVanGamesInCS
             this.PILLAR6A = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ScorePosition = new System.Windows.Forms.Label();
-            this.Restart = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.FinalScore = new System.Windows.Forms.Label();
             FormBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
@@ -101,6 +101,7 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.Player, "Player");
             this.Player.Name = "Player";
             this.Player.TabStop = false;
+            this.Player.Click += new System.EventHandler(this.Player_Click);
             // 
             // object_bush_1
             // 
@@ -109,6 +110,7 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.object_bush_1, "object_bush_1");
             this.object_bush_1.Name = "object_bush_1";
             this.object_bush_1.TabStop = false;
+            this.object_bush_1.Click += new System.EventHandler(this.object_bush_1_Click);
             // 
             // Ground
             // 
@@ -160,6 +162,24 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.ExitPanel, "ExitPanel");
             this.ExitPanel.Name = "ExitPanel";
             // 
+            // FinalScore
+            // 
+            resources.ApplyResources(this.FinalScore, "FinalScore");
+            this.FinalScore.ForeColor = System.Drawing.Color.Red;
+            this.FinalScore.Name = "FinalScore";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // Restart
+            // 
+            resources.ApplyResources(this.Restart, "Restart");
+            this.Restart.Name = "Restart";
+            this.Restart.UseVisualStyleBackColor = true;
+            this.Restart.Click += new System.EventHandler(this.Restart_Click);
+            // 
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
@@ -171,7 +191,7 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.EXIT, "EXIT");
             this.EXIT.Name = "EXIT";
             this.EXIT.UseVisualStyleBackColor = true;
-            //  
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -273,25 +293,7 @@ namespace programmerenVanGamesInCS
             this.ScorePosition.BackColor = System.Drawing.Color.Snow;
             this.ScorePosition.Name = "ScorePosition";
             // 
-            // Restart
-            // 
-            resources.ApplyResources(this.Restart, "Restart");
-            this.Restart.Name = "Restart";
-            this.Restart.UseVisualStyleBackColor = true;
-            this.Restart.Click += new System.EventHandler(this.Restart_Click);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // FinalScore
-            // 
-            resources.ApplyResources(this.FinalScore, "FinalScore");
-            this.FinalScore.ForeColor = System.Drawing.Color.Red;
-            this.FinalScore.Name = "FinalScore";
-            // 
-            // FormBig
+            // FlappyBird
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -321,7 +323,7 @@ namespace programmerenVanGamesInCS
             this.Controls.Add(FormBackground);
             this.IsMdiContainer = true;
             this.KeyPreview = true;
-            this.Name = "FormBig";
+            this.Name = "FlappyBird";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormBig_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();

@@ -240,5 +240,15 @@ namespace programmerenVanGamesInCS
             PILLAR6A.Location = new Point(PILLAR6A.Location.X + 600, PILLAR6A.Location.Y);
             PILLAR6B.Location = new Point(PILLAR6B.Location.X + 600, PILLAR6B.Location.Y);
         }
+
+        private void object_bush_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Player_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

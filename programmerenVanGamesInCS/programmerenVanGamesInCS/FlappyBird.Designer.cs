@@ -191,6 +191,7 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.EXIT, "EXIT");
             this.EXIT.Name = "EXIT";
             this.EXIT.UseVisualStyleBackColor = true;
+            this.EXIT.Click += new System.EventHandler(this.EXIT_Click);
             // 
             // label1
             // 

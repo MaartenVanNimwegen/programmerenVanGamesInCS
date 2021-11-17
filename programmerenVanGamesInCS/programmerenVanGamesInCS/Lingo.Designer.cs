@@ -29,13 +29,14 @@ namespace programmerenVanGamesInCS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lingo));
             this.LingoImg = new System.Windows.Forms.PictureBox();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.ChooseLanguageLabel = new System.Windows.Forms.Label();
             this.DutchBtn = new System.Windows.Forms.Button();
             this.EnglishBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.WordInputBox = new System.Windows.Forms.TextBox();
             this.Row1Letter1 = new System.Windows.Forms.Label();
             this.Row1Letter2 = new System.Windows.Forms.Label();
             this.Row1Letter3 = new System.Windows.Forms.Label();
@@ -68,6 +69,7 @@ namespace programmerenVanGamesInCS
             this.WordLabel = new System.Windows.Forms.Label();
             this.RoundLabel = new System.Windows.Forms.Label();
             this.LettersPanel = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).BeginInit();
             this.GamePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -144,24 +146,24 @@ namespace programmerenVanGamesInCS
             this.EnglishBtn.Text = "Engels";
             this.EnglishBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EnglishBtn.UseVisualStyleBackColor = false;
+            this.EnglishBtn.Click += new System.EventHandler(this.EnglishBtn_Click);
             // 
-            // textBox1
+            // WordInputBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBox1.Location = new System.Drawing.Point(24, 362);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 67);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "A....";
-            this.textBox1.UseWaitCursor = true;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.WordInputBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.WordInputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.WordInputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WordInputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WordInputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.WordInputBox.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.WordInputBox.Location = new System.Drawing.Point(24, 362);
+            this.WordInputBox.Multiline = true;
+            this.WordInputBox.Name = "WordInputBox";
+            this.WordInputBox.Size = new System.Drawing.Size(333, 67);
+            this.WordInputBox.TabIndex = 5;
+            this.WordInputBox.TabStop = false;
+            this.WordInputBox.UseWaitCursor = true;
+            this.WordInputBox.TextChanged += new System.EventHandler(this.WordInputBox_TextChanged);
             // 
             // Row1Letter1
             // 
@@ -201,6 +203,7 @@ namespace programmerenVanGamesInCS
             this.Row1Letter3.TabIndex = 8;
             this.Row1Letter3.Text = ".";
             this.Row1Letter3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Row1Letter3.Click += new System.EventHandler(this.Row1Letter3_Click);
             // 
             // Row1Letter4
             // 
@@ -497,7 +500,7 @@ namespace programmerenVanGamesInCS
             this.GamePanel.Controls.Add(this.TimeLabel);
             this.GamePanel.Controls.Add(this.WordLabel);
             this.GamePanel.Controls.Add(this.RoundLabel);
-            this.GamePanel.Controls.Add(this.textBox1);
+            this.GamePanel.Controls.Add(this.WordInputBox);
             this.GamePanel.Location = new System.Drawing.Point(1001, 427);
             this.GamePanel.Name = "GamePanel";
             this.GamePanel.Size = new System.Drawing.Size(383, 452);
@@ -605,6 +608,12 @@ namespace programmerenVanGamesInCS
             this.LettersPanel.Size = new System.Drawing.Size(599, 619);
             this.LettersPanel.TabIndex = 32;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Lingo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -644,7 +653,7 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label ChooseLanguageLabel;
         private System.Windows.Forms.Button DutchBtn;
         private System.Windows.Forms.Button EnglishBtn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox WordInputBox;
         private System.Windows.Forms.Label Row1Letter1;
         private System.Windows.Forms.Label Row1Letter2;
         private System.Windows.Forms.Label Row1Letter3;
@@ -677,5 +686,6 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label WordLabel;
         private System.Windows.Forms.Label RoundLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

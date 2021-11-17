@@ -260,5 +260,10 @@ namespace programmerenVanGamesInCS
         {
 
         }
+
+        private void FormBackground_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

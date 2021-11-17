@@ -284,6 +284,7 @@ namespace programmerenVanGamesInCS
             FormBackground.Image = global::programmerenVanGamesInCS.Properties.Resources.Background;
             FormBackground.Name = "FormBackground";
             FormBackground.TabStop = false;
+            FormBackground.Click += new System.EventHandler(this.FormBackground_Click);
             // 
             // FlappyBird
             // 

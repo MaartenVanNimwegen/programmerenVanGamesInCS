@@ -117,18 +117,186 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="FormBackground.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FormBackground.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="FormBackground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-239, -52</value>
+  </data>
+  <data name="FormBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="FormBackground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1609, 880</value>
+  </data>
+  <data name="FormBackground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FormBackground.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FormBackground.Name" xml:space="preserve">
+    <value>FormBackground</value>
+  </data>
+  <data name="&gt;&gt;FormBackground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FormBackground.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FormBackground.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Player.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 360</value>
+  </data>
+  <data name="Player.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Player.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 62</value>
+  </data>
+  <data name="Player.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Player.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Player.Name" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="&gt;&gt;Player.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Player.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="object_bush_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 542</value>
+  </data>
+  <data name="object_bush_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="object_bush_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 102</value>
+  </data>
+  <data name="object_bush_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="object_bush_1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;object_bush_1.Name" xml:space="preserve">
+    <value>object_bush_1</value>
+  </data>
+  <data name="&gt;&gt;object_bush_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;object_bush_1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;object_bush_1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Ground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 639</value>
+  </data>
+  <data name="Ground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Ground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1300, 132</value>
+  </data>
+  <data name="Ground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Ground.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Ground.Name" xml:space="preserve">
+    <value>Ground</value>
+  </data>
+  <data name="&gt;&gt;Ground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ground.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ground.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="object_bush_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 542</value>
+  </data>
+  <data name="object_bush_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="object_bush_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 102</value>
+  </data>
+  <data name="object_bush_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="object_bush_2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;object_bush_2.Name" xml:space="preserve">
+    <value>object_bush_2</value>
+  </data>
+  <data name="&gt;&gt;object_bush_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;object_bush_2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;object_bush_2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="object_bush_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1109, 542</value>
+  </data>
+  <data name="object_bush_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="object_bush_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 102</value>
+  </data>
+  <data name="object_bush_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="object_bush_3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;object_bush_3.Name" xml:space="preserve">
+    <value>object_bush_3</value>
+  </data>
+  <data name="&gt;&gt;object_bush_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;object_bush_3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;object_bush_3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
   <metadata name="TimerTick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FinalScore.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FinalScore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FinalScore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -225,9 +393,6 @@
   <data name="&gt;&gt;Restart.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -254,9 +419,6 @@
   </data>
   <data name="EXIT.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt, style=Bold, Italic</value>
-  </data>
-  <data name="EXIT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="EXIT.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 431</value>
@@ -291,9 +453,6 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 72pt, style=Bold, Italic</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 169</value>
   </data>
@@ -319,7 +478,7 @@
     <value>5</value>
   </data>
   <data name="ExitPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 110</value>
+    <value>350, 55</value>
   </data>
   <data name="ExitPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -342,14 +501,329 @@
   <data name="&gt;&gt;ExitPanel.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="Pillar1A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, -2</value>
+  </data>
+  <data name="Pillar1A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Pillar1A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 201</value>
+  </data>
+  <data name="Pillar1A.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Pillar1A.Name" xml:space="preserve">
+    <value>Pillar1A</value>
+  </data>
+  <data name="&gt;&gt;Pillar1A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pillar1A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Pillar1A.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Pillar1B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 192</value>
+  </data>
+  <data name="Pillar1B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Pillar1B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="Pillar1B.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Pillar1B.Name" xml:space="preserve">
+    <value>Pillar1B</value>
+  </data>
+  <data name="&gt;&gt;Pillar1B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pillar1B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Pillar1B.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="PILLAR3B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR3B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 561</value>
+  </data>
+  <data name="PILLAR3B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR3B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="PILLAR3B.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3B.Name" xml:space="preserve">
+    <value>PILLAR3B</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3B.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="PILLAR3A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR3A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 606</value>
+  </data>
+  <data name="PILLAR3A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR3A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 165</value>
+  </data>
+  <data name="PILLAR3A.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3A.Name" xml:space="preserve">
+    <value>PILLAR3A</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR3A.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="PILLAR2A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR2A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>849, -2</value>
+  </data>
+  <data name="PILLAR2A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR2A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 118</value>
+  </data>
+  <data name="PILLAR2A.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2A.Name" xml:space="preserve">
+    <value>PILLAR2A</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2A.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PILLAR2B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR2B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 110</value>
+  </data>
+  <data name="PILLAR2B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR2B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="PILLAR2B.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2B.Name" xml:space="preserve">
+    <value>PILLAR2B</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR2B.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PILLAR4B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR4B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 411</value>
+  </data>
+  <data name="PILLAR4B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR4B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="PILLAR4B.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4B.Name" xml:space="preserve">
+    <value>PILLAR4B</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4B.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PILLAR4A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR4A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>849, 456</value>
+  </data>
+  <data name="PILLAR4A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR4A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 315</value>
+  </data>
+  <data name="PILLAR4A.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4A.Name" xml:space="preserve">
+    <value>PILLAR4A</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR4A.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PILLAR5B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR5B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1212, 230</value>
+  </data>
+  <data name="PILLAR5B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR5B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="PILLAR5B.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5B.Name" xml:space="preserve">
+    <value>PILLAR5B</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5B.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PILLAR5A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR5A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1231, -4</value>
+  </data>
+  <data name="PILLAR5A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR5A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 248</value>
+  </data>
+  <data name="PILLAR5A.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5A.Name" xml:space="preserve">
+    <value>PILLAR5A</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR5A.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PILLAR6B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR6B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1212, 531</value>
+  </data>
+  <data name="PILLAR6B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR6B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="PILLAR6B.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6B.Name" xml:space="preserve">
+    <value>PILLAR6B</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6B.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6B.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PILLAR6A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PILLAR6A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1231, 561</value>
+  </data>
+  <data name="PILLAR6A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PILLAR6A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 210</value>
+  </data>
+  <data name="PILLAR6A.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6A.Name" xml:space="preserve">
+    <value>PILLAR6A</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6A.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PILLAR6A.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 30</value>
@@ -419,516 +893,6 @@
   </data>
   <data name="&gt;&gt;ScorePosition.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="PILLAR6B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR6B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1212, 531</value>
-  </data>
-  <data name="PILLAR6B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR6B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="PILLAR6B.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6B.Name" xml:space="preserve">
-    <value>PILLAR6B</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6B.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="PILLAR5B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR5B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1212, 230</value>
-  </data>
-  <data name="PILLAR5B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR5B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="PILLAR5B.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5B.Name" xml:space="preserve">
-    <value>PILLAR5B</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5B.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="PILLAR5A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR5A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, -4</value>
-  </data>
-  <data name="PILLAR5A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR5A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 248</value>
-  </data>
-  <data name="PILLAR5A.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5A.Name" xml:space="preserve">
-    <value>PILLAR5A</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR5A.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PILLAR6A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR6A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, 561</value>
-  </data>
-  <data name="PILLAR6A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR6A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 210</value>
-  </data>
-  <data name="PILLAR6A.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6A.Name" xml:space="preserve">
-    <value>PILLAR6A</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR6A.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="PILLAR4B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR4B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 411</value>
-  </data>
-  <data name="PILLAR4B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR4B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="PILLAR4B.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4B.Name" xml:space="preserve">
-    <value>PILLAR4B</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4B.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="PILLAR4A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR4A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 456</value>
-  </data>
-  <data name="PILLAR4A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR4A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 315</value>
-  </data>
-  <data name="PILLAR4A.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4A.Name" xml:space="preserve">
-    <value>PILLAR4A</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR4A.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="PILLAR2B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR2B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 110</value>
-  </data>
-  <data name="PILLAR2B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR2B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="PILLAR2B.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2B.Name" xml:space="preserve">
-    <value>PILLAR2B</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2B.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="PILLAR2A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR2A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, -2</value>
-  </data>
-  <data name="PILLAR2A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR2A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 118</value>
-  </data>
-  <data name="PILLAR2A.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2A.Name" xml:space="preserve">
-    <value>PILLAR2A</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR2A.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="PILLAR3B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR3B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 561</value>
-  </data>
-  <data name="PILLAR3B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR3B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="PILLAR3B.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3B.Name" xml:space="preserve">
-    <value>PILLAR3B</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3B.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="PILLAR3A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PILLAR3A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 606</value>
-  </data>
-  <data name="PILLAR3A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PILLAR3A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 165</value>
-  </data>
-  <data name="PILLAR3A.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3A.Name" xml:space="preserve">
-    <value>PILLAR3A</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PILLAR3A.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="Pillar1B.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Pillar1B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 192</value>
-  </data>
-  <data name="Pillar1B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Pillar1B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 52</value>
-  </data>
-  <data name="Pillar1B.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;Pillar1B.Name" xml:space="preserve">
-    <value>Pillar1B</value>
-  </data>
-  <data name="&gt;&gt;Pillar1B.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Pillar1B.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Pillar1B.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Pillar1A.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Pillar1A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, -2</value>
-  </data>
-  <data name="Pillar1A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Pillar1A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 201</value>
-  </data>
-  <data name="Pillar1A.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;Pillar1A.Name" xml:space="preserve">
-    <value>Pillar1A</value>
-  </data>
-  <data name="&gt;&gt;Pillar1A.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Pillar1A.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Pillar1A.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="object_bush_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="object_bush_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1109, 542</value>
-  </data>
-  <data name="object_bush_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="object_bush_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 102</value>
-  </data>
-  <data name="object_bush_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="object_bush_3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Name" xml:space="preserve">
-    <value>object_bush_3</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="object_bush_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="object_bush_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 542</value>
-  </data>
-  <data name="object_bush_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="object_bush_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 102</value>
-  </data>
-  <data name="object_bush_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="object_bush_2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;object_bush_2.Name" xml:space="preserve">
-    <value>object_bush_2</value>
-  </data>
-  <data name="&gt;&gt;object_bush_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;object_bush_2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;object_bush_2.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="Player.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Player.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 360</value>
-  </data>
-  <data name="Player.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Player.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 62</value>
-  </data>
-  <data name="Player.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="Player.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Player.Name" xml:space="preserve">
-    <value>Player</value>
-  </data>
-  <data name="&gt;&gt;Player.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Player.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Player.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="object_bush_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="object_bush_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 542</value>
-  </data>
-  <data name="object_bush_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="object_bush_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 102</value>
-  </data>
-  <data name="object_bush_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="object_bush_1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;object_bush_1.Name" xml:space="preserve">
-    <value>object_bush_1</value>
-  </data>
-  <data name="&gt;&gt;object_bush_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;object_bush_1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;object_bush_1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="Ground.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Ground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 639</value>
-  </data>
-  <data name="Ground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Ground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1300, 132</value>
-  </data>
-  <data name="Ground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="Ground.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Ground.Name" xml:space="preserve">
-    <value>Ground</value>
-  </data>
-  <data name="&gt;&gt;Ground.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Ground.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Ground.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <metadata name="FormBackground.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="FormBackground.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="FormBackground.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="FormBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-239, -52</value>
-  </data>
-  <data name="FormBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="FormBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1609, 880</value>
-  </data>
-  <data name="FormBackground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="FormBackground.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;FormBackground.Name" xml:space="preserve">
-    <value>FormBackground</value>
-  </data>
-  <data name="&gt;&gt;FormBackground.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FormBackground.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FormBackground.ZOrder" xml:space="preserve">
-    <value>20</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -4086,9 +4050,6 @@
         AAAAAAAAAAAAAAAAAAAADwEvnyYAe8YLAB9dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AcAAOABAADA
         AAAAwAAAAMAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAOABAADwAQAA8AcAAPAPAADwHwAA/j8AAA==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>

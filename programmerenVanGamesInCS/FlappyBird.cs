@@ -255,10 +255,5 @@ namespace programmerenVanGamesInCS
         {
             Close();
         }
-
-        private void Ground_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

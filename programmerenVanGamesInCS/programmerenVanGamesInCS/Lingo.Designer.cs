@@ -29,13 +29,14 @@ namespace programmerenVanGamesInCS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lingo));
             this.LingoImg = new System.Windows.Forms.PictureBox();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.ChooseLanguageLabel = new System.Windows.Forms.Label();
             this.DutchBtn = new System.Windows.Forms.Button();
             this.EnglishBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.WordInputBox = new System.Windows.Forms.TextBox();
             this.Row1Letter1 = new System.Windows.Forms.Label();
             this.Row1Letter2 = new System.Windows.Forms.Label();
             this.Row1Letter3 = new System.Windows.Forms.Label();
@@ -62,16 +63,17 @@ namespace programmerenVanGamesInCS
             this.Row4Letter2 = new System.Windows.Forms.Label();
             this.Row4Letter1 = new System.Windows.Forms.Label();
             this.GamePanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HintBtn = new System.Windows.Forms.Button();
             this.TimeLabel = new System.Windows.Forms.Label();
             this.WordLabel = new System.Windows.Forms.Label();
             this.RoundLabel = new System.Windows.Forms.Label();
             this.LettersPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).BeginInit();
             this.GamePanel.SuspendLayout();
-            this.LettersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LettersPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LingoImg
@@ -144,23 +146,24 @@ namespace programmerenVanGamesInCS
             this.EnglishBtn.Text = "Engels";
             this.EnglishBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EnglishBtn.UseVisualStyleBackColor = false;
+            this.EnglishBtn.Click += new System.EventHandler(this.EnglishBtn_Click);
             // 
-            // textBox1
+            // WordInputBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBox1.Location = new System.Drawing.Point(24, 362);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 67);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "A....";
-            this.textBox1.UseWaitCursor = true;
+            this.WordInputBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.WordInputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.WordInputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WordInputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WordInputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.WordInputBox.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.WordInputBox.Location = new System.Drawing.Point(24, 362);
+            this.WordInputBox.Multiline = true;
+            this.WordInputBox.Name = "WordInputBox";
+            this.WordInputBox.Size = new System.Drawing.Size(333, 67);
+            this.WordInputBox.TabIndex = 5;
+            this.WordInputBox.TabStop = false;
+            this.WordInputBox.UseWaitCursor = true;
+            this.WordInputBox.TextChanged += new System.EventHandler(this.WordInputBox_TextChanged);
             // 
             // Row1Letter1
             // 
@@ -214,7 +217,6 @@ namespace programmerenVanGamesInCS
             this.Row1Letter4.TabIndex = 9;
             this.Row1Letter4.Text = ".";
             this.Row1Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row1Letter4.Click += new System.EventHandler(this.Row1Letter4_Click);
             // 
             // Row1Letter5
             // 
@@ -254,7 +256,6 @@ namespace programmerenVanGamesInCS
             this.Row2Letter4.TabIndex = 14;
             this.Row2Letter4.Text = ".";
             this.Row2Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row2Letter4.Click += new System.EventHandler(this.label2_Click);
             // 
             // Row2Letter3
             // 
@@ -320,7 +321,6 @@ namespace programmerenVanGamesInCS
             this.Row3Letter4.TabIndex = 19;
             this.Row3Letter4.Text = ".";
             this.Row3Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row3Letter4.Click += new System.EventHandler(this.label7_Click);
             // 
             // Row3Letter3
             // 
@@ -386,7 +386,6 @@ namespace programmerenVanGamesInCS
             this.Row5Letter4.TabIndex = 29;
             this.Row5Letter4.Text = ".";
             this.Row5Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row5Letter4.Click += new System.EventHandler(this.label12_Click);
             // 
             // Row5Letter3
             // 
@@ -452,7 +451,6 @@ namespace programmerenVanGamesInCS
             this.Row4Letter4.TabIndex = 24;
             this.Row4Letter4.Text = ".";
             this.Row4Letter4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Row4Letter4.Click += new System.EventHandler(this.label17_Click);
             // 
             // Row4Letter3
             // 
@@ -502,11 +500,23 @@ namespace programmerenVanGamesInCS
             this.GamePanel.Controls.Add(this.TimeLabel);
             this.GamePanel.Controls.Add(this.WordLabel);
             this.GamePanel.Controls.Add(this.RoundLabel);
-            this.GamePanel.Controls.Add(this.textBox1);
+            this.GamePanel.Controls.Add(this.WordInputBox);
             this.GamePanel.Location = new System.Drawing.Point(1001, 427);
             this.GamePanel.Name = "GamePanel";
             this.GamePanel.Size = new System.Drawing.Size(383, 452);
             this.GamePanel.TabIndex = 31;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(342, 96);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
             // HintBtn
             // 
@@ -597,19 +607,12 @@ namespace programmerenVanGamesInCS
             this.LettersPanel.Name = "LettersPanel";
             this.LettersPanel.Size = new System.Drawing.Size(599, 619);
             this.LettersPanel.TabIndex = 32;
-            this.LettersPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox1
+            // timer1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(342, 96);
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Lingo
             // 
@@ -637,8 +640,8 @@ namespace programmerenVanGamesInCS
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).EndInit();
             this.GamePanel.ResumeLayout(false);
             this.GamePanel.PerformLayout();
-            this.LettersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.LettersPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -650,7 +653,7 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label ChooseLanguageLabel;
         private System.Windows.Forms.Button DutchBtn;
         private System.Windows.Forms.Button EnglishBtn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox WordInputBox;
         private System.Windows.Forms.Label Row1Letter1;
         private System.Windows.Forms.Label Row1Letter2;
         private System.Windows.Forms.Label Row1Letter3;
@@ -683,5 +686,6 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label WordLabel;
         private System.Windows.Forms.Label RoundLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

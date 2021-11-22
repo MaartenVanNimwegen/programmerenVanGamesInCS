@@ -89,12 +89,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="scoreOpslaan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="scoreOpslaan.Designer.cs">
-      <DependentUpon>scoreOpslaan.cs</DependentUpon>
-    </Compile>
     <Compile Include="LingoGame.cs" />
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
@@ -124,9 +118,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FlappyBird.resx">
       <DependentUpon>FlappyBird.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="scoreOpslaan.resx">
-      <DependentUpon>scoreOpslaan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homescreen.resx">
       <DependentUpon>homescreen.cs</DependentUpon>

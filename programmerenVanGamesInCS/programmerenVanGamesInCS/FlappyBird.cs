@@ -269,8 +269,26 @@ namespace programmerenVanGamesInCS
 
         public void button2_Click(object sender, EventArgs e)
         {
-            scoreOpslaan myForm = new scoreOpslaan();
-            myForm.ShowDialog();
+
+            string query = "insert into scores VALUES(id, 'naam', now(), '@score');";
+            using (MySqlConnection connection = new MySqlConnection())
+            {
+                connection.ConnectionString= "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    connection.Open();
+                    int resultaat = command.ExecuteNonQuery();
+                    if (resultaat == 1)
+                    {
+                        MessageBox.Show("Je score is met succes opgeslagen.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Er is een fout opgetreden, de score is niet opgeslagen");
+                    }
+                }
+            }
+
         }
     }
 }

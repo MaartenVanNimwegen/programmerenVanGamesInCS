@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace programmerenVanGamesInCS
 {
@@ -17,7 +18,7 @@ namespace programmerenVanGamesInCS
         private int speed = 10;
         const int gravity = 7;
         private bool display_out = false;
-        private int score = 0;
+        public int score = 0;
 
         // Game load
         public FlappyBird()
@@ -266,12 +267,10 @@ namespace programmerenVanGamesInCS
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection())
-            {
-                conn.ConnectionString = "Server=[server_name];Database=[database_name];Trusted_Connection=true";
-            }
+            scoreOpslaan myForm = new scoreOpslaan();
+            myForm.ShowDialog();
         }
     }
 }

@@ -52,7 +52,7 @@ namespace programmerenVanGamesInCS
             playerGravity();
             if (display_out == true) display_end();
             movePillars();
-            ScorePosition.Text = (score / 2).ToString();
+            ScorePosition.Text = score.ToString();
 
             // Increase dificulty every 10 points
             if ((score / 2) % 3 == 0 && score != 0)
@@ -107,7 +107,7 @@ namespace programmerenVanGamesInCS
                 hidePillars();
                 ExitPanel.Show();
                 ExitPanel.Focus();
-                FinalScore.Text = (score / 2).ToString();
+                FinalScore.Text = score.ToString();
             }
         }
 
@@ -270,7 +270,9 @@ namespace programmerenVanGamesInCS
         public void button2_Click(object sender, EventArgs e)
         {
 
-            string query = "insert into scores VALUES(id, 'naam', now(), '@score');";
+            //string query = "insert into scores VALUES(id, 'naam', now(), '@score');";
+            string query = "insert into scores (naam, datum, score) values ('maarten' , now(), " + score.ToString() + ")";
+
             using (MySqlConnection connection = new MySqlConnection())
             {
                 connection.ConnectionString= "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";

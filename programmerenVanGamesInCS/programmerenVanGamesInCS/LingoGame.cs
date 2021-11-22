@@ -87,6 +87,7 @@ namespace programmerenVanGamesInCS
                     }
                 }
 
+                AcceptingInput = true;
                 return IpL;
             }
             return null;

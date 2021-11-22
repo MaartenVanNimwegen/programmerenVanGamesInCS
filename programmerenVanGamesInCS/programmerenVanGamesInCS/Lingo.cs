@@ -123,7 +123,7 @@ namespace programmerenVanGamesInCS
                 Dictionary<string, string> IpL = NewLingoGame.GuessWord(Input);
                 int i = 0;
 
-                if (IpL.ContainsKey("RowYLetterX"))
+                if (IpL != null)
                 {
                     foreach (var LetterInfo in IpL)
                     {

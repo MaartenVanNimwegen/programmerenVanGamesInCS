@@ -81,6 +81,9 @@
     <EmbeddedResource Include="Lingo.resx">
       <DependentUpon>Lingo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pong.resx">
+      <DependentUpon>Pong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

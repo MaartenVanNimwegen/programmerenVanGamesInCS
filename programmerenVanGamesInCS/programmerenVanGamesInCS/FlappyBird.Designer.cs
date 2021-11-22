@@ -34,6 +34,7 @@ namespace programmerenVanGamesInCS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
             this.ExitPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.FinalScore = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Restart = new System.Windows.Forms.Button();
@@ -59,7 +60,6 @@ namespace programmerenVanGamesInCS
             this.Player = new System.Windows.Forms.PictureBox();
             this.object_bush_1 = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             FormBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).BeginInit();
             this.ExitPanel.SuspendLayout();
@@ -113,6 +113,13 @@ namespace programmerenVanGamesInCS
             this.ExitPanel.Controls.Add(this.label1);
             resources.ApplyResources(this.ExitPanel, "ExitPanel");
             this.ExitPanel.Name = "ExitPanel";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FinalScore
             // 
@@ -287,13 +294,6 @@ namespace programmerenVanGamesInCS
             this.Ground.Name = "Ground";
             this.Ground.TabStop = false;
             this.Ground.Click += new System.EventHandler(this.Ground_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FlappyBird
             // 

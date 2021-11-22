@@ -160,19 +160,19 @@
     <value>17, 17</value>
   </metadata>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 28.2pt, style=Bold, Italic</value>
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold, Italic</value>
   </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 430</value>
+    <value>314, 494</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 125</value>
+    <value>241, 61</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>

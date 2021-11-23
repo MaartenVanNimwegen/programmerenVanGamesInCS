@@ -12,6 +12,8 @@ namespace programmerenVanGamesInCS
         public LingoGame()
         {
             Timer = 90;
+            Hints = 1;
+            WordNumber = 1;
 
             NLWords = new List<string>();
             NLWords.Add("kamer");

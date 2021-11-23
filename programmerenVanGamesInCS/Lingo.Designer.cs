@@ -535,6 +535,7 @@ namespace programmerenVanGamesInCS
             this.HintBtn.Text = "Hint   (1)";
             this.HintBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HintBtn.UseVisualStyleBackColor = false;
+            this.HintBtn.Click += new System.EventHandler(this.HintBtn_Click);
             // 
             // TimeLabel
             // 

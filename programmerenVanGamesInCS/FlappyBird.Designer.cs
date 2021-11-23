@@ -32,54 +32,56 @@ namespace programmerenVanGamesInCS
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox FormBackground;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
-            this.Player = new System.Windows.Forms.PictureBox();
-            this.object_bush_1 = new System.Windows.Forms.PictureBox();
-            this.Ground = new System.Windows.Forms.PictureBox();
-            this.object_bush_2 = new System.Windows.Forms.PictureBox();
-            this.object_bush_3 = new System.Windows.Forms.PictureBox();
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
             this.ExitPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.FinalScore = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Restart = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EXIT = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Pillar1A = new System.Windows.Forms.PictureBox();
-            this.Pillar1B = new System.Windows.Forms.PictureBox();
-            this.PILLAR3B = new System.Windows.Forms.PictureBox();
-            this.PILLAR3A = new System.Windows.Forms.PictureBox();
-            this.PILLAR2A = new System.Windows.Forms.PictureBox();
-            this.PILLAR2B = new System.Windows.Forms.PictureBox();
-            this.PILLAR4B = new System.Windows.Forms.PictureBox();
-            this.PILLAR4A = new System.Windows.Forms.PictureBox();
-            this.PILLAR5B = new System.Windows.Forms.PictureBox();
-            this.PILLAR5A = new System.Windows.Forms.PictureBox();
-            this.PILLAR6B = new System.Windows.Forms.PictureBox();
-            this.PILLAR6A = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ScorePosition = new System.Windows.Forms.Label();
+            this.PILLAR6B = new System.Windows.Forms.PictureBox();
+            this.PILLAR5B = new System.Windows.Forms.PictureBox();
+            this.PILLAR5A = new System.Windows.Forms.PictureBox();
+            this.PILLAR6A = new System.Windows.Forms.PictureBox();
+            this.PILLAR4B = new System.Windows.Forms.PictureBox();
+            this.PILLAR4A = new System.Windows.Forms.PictureBox();
+            this.PILLAR2B = new System.Windows.Forms.PictureBox();
+            this.PILLAR2A = new System.Windows.Forms.PictureBox();
+            this.PILLAR3B = new System.Windows.Forms.PictureBox();
+            this.PILLAR3A = new System.Windows.Forms.PictureBox();
+            this.Pillar1B = new System.Windows.Forms.PictureBox();
+            this.Pillar1A = new System.Windows.Forms.PictureBox();
+            this.object_bush_3 = new System.Windows.Forms.PictureBox();
+            this.object_bush_2 = new System.Windows.Forms.PictureBox();
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.object_bush_1 = new System.Windows.Forms.PictureBox();
+            this.Ground = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             FormBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).BeginInit();
+            this.ExitPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR5B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR5A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pillar1B)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pillar1A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.object_bush_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).BeginInit();
-            this.ExitPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pillar1A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pillar1B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR5B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR5A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6B)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6A)).BeginInit();
             this.SuspendLayout();
             // 
             // FormBackground
@@ -91,47 +93,7 @@ namespace programmerenVanGamesInCS
             FormBackground.Image = global::programmerenVanGamesInCS.Properties.Resources.Background;
             FormBackground.Name = "FormBackground";
             FormBackground.TabStop = false;
-            // 
-            // Player
-            // 
-            this.Player.BackColor = System.Drawing.Color.Transparent;
-            this.Player.Image = global::programmerenVanGamesInCS.Properties.Resources.Bird;
-            resources.ApplyResources(this.Player, "Player");
-            this.Player.Name = "Player";
-            this.Player.TabStop = false;
-            this.Player.Click += new System.EventHandler(this.Player_Click);
-            // 
-            // object_bush_1
-            // 
-            this.object_bush_1.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_1.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
-            resources.ApplyResources(this.object_bush_1, "object_bush_1");
-            this.object_bush_1.Name = "object_bush_1";
-            this.object_bush_1.TabStop = false;
-            this.object_bush_1.Click += new System.EventHandler(this.object_bush_1_Click);
-            // 
-            // Ground
-            // 
-            this.Ground.Image = global::programmerenVanGamesInCS.Properties.Resources.Ground1;
-            resources.ApplyResources(this.Ground, "Ground");
-            this.Ground.Name = "Ground";
-            this.Ground.TabStop = false;
-            // 
-            // object_bush_2
-            // 
-            this.object_bush_2.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_2.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
-            resources.ApplyResources(this.object_bush_2, "object_bush_2");
-            this.object_bush_2.Name = "object_bush_2";
-            this.object_bush_2.TabStop = false;
-            // 
-            // object_bush_3
-            // 
-            this.object_bush_3.BackColor = System.Drawing.Color.Transparent;
-            this.object_bush_3.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
-            resources.ApplyResources(this.object_bush_3, "object_bush_3");
-            this.object_bush_3.Name = "object_bush_3";
-            this.object_bush_3.TabStop = false;
+            FormBackground.Click += new System.EventHandler(this.FormBackground_Click);
             // 
             // TimerTick
             // 
@@ -143,6 +105,8 @@ namespace programmerenVanGamesInCS
             // 
             this.ExitPanel.BackColor = System.Drawing.Color.DarkGray;
             this.ExitPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ExitPanel.Controls.Add(this.textBox1);
+            this.ExitPanel.Controls.Add(this.button2);
             this.ExitPanel.Controls.Add(this.FinalScore);
             this.ExitPanel.Controls.Add(this.label3);
             this.ExitPanel.Controls.Add(this.Restart);
@@ -151,6 +115,13 @@ namespace programmerenVanGamesInCS
             this.ExitPanel.Controls.Add(this.label1);
             resources.ApplyResources(this.ExitPanel, "ExitPanel");
             this.ExitPanel.Name = "ExitPanel";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FinalScore
             // 
@@ -188,61 +159,24 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // Pillar1A
+            // label2
             // 
-            this.Pillar1A.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Pillar1A, "Pillar1A");
-            this.Pillar1A.Name = "Pillar1A";
-            this.Pillar1A.TabStop = false;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Snow;
+            this.label2.Name = "label2";
             // 
-            // Pillar1B
+            // ScorePosition
             // 
-            this.Pillar1B.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Pillar1B, "Pillar1B");
-            this.Pillar1B.Name = "Pillar1B";
-            this.Pillar1B.TabStop = false;
+            resources.ApplyResources(this.ScorePosition, "ScorePosition");
+            this.ScorePosition.BackColor = System.Drawing.Color.Snow;
+            this.ScorePosition.Name = "ScorePosition";
             // 
-            // PILLAR3B
+            // PILLAR6B
             // 
-            this.PILLAR3B.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR3B, "PILLAR3B");
-            this.PILLAR3B.Name = "PILLAR3B";
-            this.PILLAR3B.TabStop = false;
-            // 
-            // PILLAR3A
-            // 
-            this.PILLAR3A.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR3A, "PILLAR3A");
-            this.PILLAR3A.Name = "PILLAR3A";
-            this.PILLAR3A.TabStop = false;
-            // 
-            // PILLAR2A
-            // 
-            this.PILLAR2A.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR2A, "PILLAR2A");
-            this.PILLAR2A.Name = "PILLAR2A";
-            this.PILLAR2A.TabStop = false;
-            // 
-            // PILLAR2B
-            // 
-            this.PILLAR2B.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR2B, "PILLAR2B");
-            this.PILLAR2B.Name = "PILLAR2B";
-            this.PILLAR2B.TabStop = false;
-            // 
-            // PILLAR4B
-            // 
-            this.PILLAR4B.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR4B, "PILLAR4B");
-            this.PILLAR4B.Name = "PILLAR4B";
-            this.PILLAR4B.TabStop = false;
-            // 
-            // PILLAR4A
-            // 
-            this.PILLAR4A.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR4A, "PILLAR4A");
-            this.PILLAR4A.Name = "PILLAR4A";
-            this.PILLAR4A.TabStop = false;
+            this.PILLAR6B.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR6B, "PILLAR6B");
+            this.PILLAR6B.Name = "PILLAR6B";
+            this.PILLAR6B.TabStop = false;
             // 
             // PILLAR5B
             // 
@@ -258,13 +192,6 @@ namespace programmerenVanGamesInCS
             this.PILLAR5A.Name = "PILLAR5A";
             this.PILLAR5A.TabStop = false;
             // 
-            // PILLAR6B
-            // 
-            this.PILLAR6B.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.PILLAR6B, "PILLAR6B");
-            this.PILLAR6B.Name = "PILLAR6B";
-            this.PILLAR6B.TabStop = false;
-            // 
             // PILLAR6A
             // 
             this.PILLAR6A.BackColor = System.Drawing.Color.Lime;
@@ -272,17 +199,109 @@ namespace programmerenVanGamesInCS
             this.PILLAR6A.Name = "PILLAR6A";
             this.PILLAR6A.TabStop = false;
             // 
-            // label2
+            // PILLAR4B
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Snow;
-            this.label2.Name = "label2";
+            this.PILLAR4B.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR4B, "PILLAR4B");
+            this.PILLAR4B.Name = "PILLAR4B";
+            this.PILLAR4B.TabStop = false;
             // 
-            // ScorePosition
+            // PILLAR4A
             // 
-            resources.ApplyResources(this.ScorePosition, "ScorePosition");
-            this.ScorePosition.BackColor = System.Drawing.Color.Snow;
-            this.ScorePosition.Name = "ScorePosition";
+            this.PILLAR4A.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR4A, "PILLAR4A");
+            this.PILLAR4A.Name = "PILLAR4A";
+            this.PILLAR4A.TabStop = false;
+            // 
+            // PILLAR2B
+            // 
+            this.PILLAR2B.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR2B, "PILLAR2B");
+            this.PILLAR2B.Name = "PILLAR2B";
+            this.PILLAR2B.TabStop = false;
+            // 
+            // PILLAR2A
+            // 
+            this.PILLAR2A.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR2A, "PILLAR2A");
+            this.PILLAR2A.Name = "PILLAR2A";
+            this.PILLAR2A.TabStop = false;
+            // 
+            // PILLAR3B
+            // 
+            this.PILLAR3B.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR3B, "PILLAR3B");
+            this.PILLAR3B.Name = "PILLAR3B";
+            this.PILLAR3B.TabStop = false;
+            // 
+            // PILLAR3A
+            // 
+            this.PILLAR3A.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.PILLAR3A, "PILLAR3A");
+            this.PILLAR3A.Name = "PILLAR3A";
+            this.PILLAR3A.TabStop = false;
+            // 
+            // Pillar1B
+            // 
+            this.Pillar1B.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Pillar1B, "Pillar1B");
+            this.Pillar1B.Name = "Pillar1B";
+            this.Pillar1B.TabStop = false;
+            // 
+            // Pillar1A
+            // 
+            this.Pillar1A.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Pillar1A, "Pillar1A");
+            this.Pillar1A.Name = "Pillar1A";
+            this.Pillar1A.TabStop = false;
+            // 
+            // object_bush_3
+            // 
+            this.object_bush_3.BackColor = System.Drawing.Color.Transparent;
+            this.object_bush_3.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
+            resources.ApplyResources(this.object_bush_3, "object_bush_3");
+            this.object_bush_3.Name = "object_bush_3";
+            this.object_bush_3.TabStop = false;
+            // 
+            // object_bush_2
+            // 
+            this.object_bush_2.BackColor = System.Drawing.Color.Transparent;
+            this.object_bush_2.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
+            resources.ApplyResources(this.object_bush_2, "object_bush_2");
+            this.object_bush_2.Name = "object_bush_2";
+            this.object_bush_2.TabStop = false;
+            // 
+            // Player
+            // 
+            this.Player.BackColor = System.Drawing.Color.Transparent;
+            this.Player.Image = global::programmerenVanGamesInCS.Properties.Resources.Bird;
+            resources.ApplyResources(this.Player, "Player");
+            this.Player.Name = "Player";
+            this.Player.TabStop = false;
+            this.Player.Click += new System.EventHandler(this.Player_Click);
+            // 
+            // object_bush_1
+            // 
+            this.object_bush_1.BackColor = System.Drawing.Color.Transparent;
+            this.object_bush_1.Image = global::programmerenVanGamesInCS.Properties.Resources.Bush;
+            resources.ApplyResources(this.object_bush_1, "object_bush_1");
+            this.object_bush_1.Name = "object_bush_1";
+            this.object_bush_1.TabStop = false;
+            this.object_bush_1.Click += new System.EventHandler(this.object_bush_1_Click);
+            // 
+            // Ground
+            // 
+            this.Ground.Image = global::programmerenVanGamesInCS.Properties.Resources.Ground;
+            resources.ApplyResources(this.Ground, "Ground");
+            this.Ground.Name = "Ground";
+            this.Ground.TabStop = false;
+            this.Ground.Click += new System.EventHandler(this.Ground_Click);
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FlappyBird
             // 
@@ -316,26 +335,26 @@ namespace programmerenVanGamesInCS
             this.Name = "FlappyBird";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormBig_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.object_bush_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).EndInit();
             this.ExitPanel.ResumeLayout(false);
             this.ExitPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pillar1A)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pillar1B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3A)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2A)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4B)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PILLAR5B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PILLAR5A)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PILLAR6B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PILLAR6A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR4A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR2A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PILLAR3A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pillar1B)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pillar1A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.object_bush_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.object_bush_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.object_bush_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,6 +388,8 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label FinalScore;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Restart;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

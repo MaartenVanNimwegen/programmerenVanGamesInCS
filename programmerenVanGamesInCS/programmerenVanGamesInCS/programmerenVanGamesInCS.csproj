@@ -157,6 +157,9 @@
     <Content Include="Images\Bush.png" />
     <Content Include="Images\Ground.png" />
     <Content Include="Images\Icon.ico" />
+    <Content Include="Images\pong-ball.png" />
+    <Content Include="Images\pong-bg.png" />
+    <Content Include="Images\undefined - Imgur.png" />
     <Content Include="Images\Xbutton.png" />
     <None Include="Resources\Ground2.png" />
     <None Include="Resources\Bush1.png" />

@@ -84,9 +84,6 @@ namespace programmerenVanGamesInCS
 
             NewLingoGame.AlreadyGuessedChars[1] = true;
 
-
-
-
             return false;
         }
         private void LingoRounds(string Language)
@@ -146,7 +143,7 @@ namespace programmerenVanGamesInCS
                                 }
                                 else if (LetterInfo.Value == "Incorrect")
                                 {
-                                    LetterBox.BackColor = Color.FromArgb(40, 129, 207);
+                                    LetterBox.BackColor = Color.FromArgb(51, 114, 196);
                                 }
                             }
 
@@ -171,6 +168,8 @@ namespace programmerenVanGamesInCS
                         if (NewLingoGame.CurrentRow <= 4)
                         {
                             NewLingoGame.CurrentRow = NewLingoGame.CurrentRow + 1;
+
+                            CompleteRowWithGuessedLetters(NewLingoGame.CurrentRow);
                         }
                         else
                         {
@@ -183,6 +182,25 @@ namespace programmerenVanGamesInCS
                             GuessedWord = true;
                         }
                     }
+                }
+            }
+        }
+
+        private void CompleteRowWithGuessedLetters(int Row)
+        {
+            for (int x = 1; x <= 5; x++)
+            {
+                if ((NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) || ((NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) && NewLingoGame.AlreadyGuessedChars[x] == true))
+                {
+                    var foundControl = this.LettersPanel.Controls.Find("Row" + NewLingoGame.CurrentRow.ToString() + "Letter" + x.ToString(), false);
+
+                    if (foundControl.Count() == 1)
+                    {
+                        var LetterBox = foundControl[0];
+
+                        LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
+                    }
+
                 }
             }
         }
@@ -258,6 +276,20 @@ namespace programmerenVanGamesInCS
                             LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
 
                             NewLingoGame.AlreadyGuessedChars[x] = true;
+
+
+                            int GuessedCount = NewLingoGame.AlreadyGuessedChars.Count;
+
+                            if (GuessedCount >= 5)
+                            {
+                                NewLingoGame.AcceptingInput = false;
+                                NewLingoGame.TimerPlaying = false;
+                                NewLingoGame.Timer = 90;
+
+                                NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
+
+                                GuessedWord = true;
+                            }
 
                             break;
                         }

@@ -114,18 +114,18 @@ namespace programmerenVanGamesInCS
                         string LetterStr = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
                         int LetterInt = Int32.Parse(LetterStr);
 
-                        foreach (var IpLD2 in IpL)
+                        foreach (var IplD2 in IpL)
                         {
-                            string LetterStr2 = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
-                            int LetterInt2 = Int32.Parse(LetterStr);
-
-                            if (LetterStr == LetterStr2 && Lette)
+                            if (IplD2.Value != "SemiCorrect")
                             {
+                                string LetterStr2 = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
+                                int LetterInt2 = Int32.Parse(LetterStr);
+
 
                             }
                         }
                     }
-                }*/
+                } */
 
 
 

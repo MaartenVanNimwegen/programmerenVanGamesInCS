@@ -269,8 +269,6 @@ namespace programmerenVanGamesInCS
 
         public void button2_Click(object sender, EventArgs e)
         {
-
-            //string query = "insert into scores VALUES(id, 'naam', now(), '@score');";
             string query = "insert into scores (naam, datum, score) values ('maarten' , now(), " + score.ToString() + ")";
 
             using (MySqlConnection connection = new MySqlConnection())

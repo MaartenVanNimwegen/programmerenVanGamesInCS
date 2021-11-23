@@ -290,5 +290,10 @@ namespace programmerenVanGamesInCS
             }
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("test");
+        }
     }
 }

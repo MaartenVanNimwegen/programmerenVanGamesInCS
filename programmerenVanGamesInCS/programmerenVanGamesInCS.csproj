@@ -125,6 +125,9 @@
     <EmbeddedResource Include="Lingo.resx">
       <DependentUpon>Lingo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pong.resx">
+      <DependentUpon>Pong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -155,6 +158,7 @@
     <Content Include="Images\Ground.png" />
     <Content Include="Images\Icon.ico" />
     <Content Include="Images\Xbutton.png" />
+    <None Include="Resources\pong-bg.png" />
     <None Include="Resources\Ground2.png" />
     <None Include="Resources\Bush1.png" />
     <None Include="Resources\Bird1.png" />

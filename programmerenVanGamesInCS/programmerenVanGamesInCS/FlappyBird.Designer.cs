@@ -34,6 +34,7 @@ namespace programmerenVanGamesInCS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
             this.ExitPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.FinalScore = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Restart = new System.Windows.Forms.Button();
@@ -59,7 +60,7 @@ namespace programmerenVanGamesInCS
             this.Player = new System.Windows.Forms.PictureBox();
             this.object_bush_1 = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             FormBackground = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(FormBackground)).BeginInit();
             this.ExitPanel.SuspendLayout();
@@ -104,6 +105,7 @@ namespace programmerenVanGamesInCS
             // 
             this.ExitPanel.BackColor = System.Drawing.Color.DarkGray;
             this.ExitPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ExitPanel.Controls.Add(this.textBox1);
             this.ExitPanel.Controls.Add(this.button2);
             this.ExitPanel.Controls.Add(this.FinalScore);
             this.ExitPanel.Controls.Add(this.label3);
@@ -113,6 +115,13 @@ namespace programmerenVanGamesInCS
             this.ExitPanel.Controls.Add(this.label1);
             resources.ApplyResources(this.ExitPanel, "ExitPanel");
             this.ExitPanel.Name = "ExitPanel";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FinalScore
             // 
@@ -288,12 +297,11 @@ namespace programmerenVanGamesInCS
             this.Ground.TabStop = false;
             this.Ground.Click += new System.EventHandler(this.Ground_Click);
             // 
-            // button2
+            // textBox1
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FlappyBird
             // 
@@ -381,6 +389,7 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Restart;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

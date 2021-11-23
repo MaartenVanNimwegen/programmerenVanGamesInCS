@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace programmerenVanGamesInCS
 {
@@ -17,7 +18,7 @@ namespace programmerenVanGamesInCS
         private int speed = 10;
         const int gravity = 7;
         private bool display_out = false;
-        private int score = 0;
+        public int score = 0;
 
         // Game load
         public FlappyBird()
@@ -51,7 +52,7 @@ namespace programmerenVanGamesInCS
             playerGravity();
             if (display_out == true) display_end();
             movePillars();
-            ScorePosition.Text = (score / 2).ToString();
+            ScorePosition.Text = score.ToString();
 
             // Increase dificulty every 10 points
             if ((score / 2) % 3 == 0 && score != 0)
@@ -106,7 +107,7 @@ namespace programmerenVanGamesInCS
                 hidePillars();
                 ExitPanel.Show();
                 ExitPanel.Focus();
-                FinalScore.Text = (score / 2).ToString();
+                FinalScore.Text = score.ToString();
             }
         }
 
@@ -266,12 +267,33 @@ namespace programmerenVanGamesInCS
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
-            /*using (SqlConnection conn = new SqlConnection())
+            string query = "insert into scores (naam, datum, score) values ('maarten' , now(), " + score.ToString() + ")";
+
+            using (MySqlConnection connection = new MySqlConnection())
             {
-                conn.ConnectionString = "Server=[server_name];Database=[database_name];Trusted_Connection=true";
-            }*/
+                connection.ConnectionString= "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    connection.Open();
+                    int resultaat = command.ExecuteNonQuery();
+                    if (resultaat == 1)
+                    {
+                        MessageBox.Show("Je score is met succes opgeslagen.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Er is een fout opgetreden, de score is niet opgeslagen");
+                    }
+                }
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("test");
         }
     }
 }

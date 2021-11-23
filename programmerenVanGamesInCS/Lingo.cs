@@ -15,7 +15,6 @@ namespace programmerenVanGamesInCS
     {
         LingoGame NewLingoGame = new LingoGame();
         bool GuessedWord = false;
-        int ix = 0;
 
         public Lingo()
         {
@@ -83,8 +82,8 @@ namespace programmerenVanGamesInCS
             Lingo.AcceptingInput = true;
             Lingo.TimerPlaying = true;
 
+            NewLingoGame.AlreadyGuessedChars[1] = true;
 
-            
             return false;
         }
         private void LingoRounds(string Language)
@@ -144,7 +143,7 @@ namespace programmerenVanGamesInCS
                                 }
                                 else if (LetterInfo.Value == "Incorrect")
                                 {
-                                    LetterBox.BackColor = Color.FromArgb(40, 129, 207);
+                                    LetterBox.BackColor = Color.FromArgb(51, 114, 196);
                                 }
                             }
 
@@ -158,6 +157,9 @@ namespace programmerenVanGamesInCS
                         NewLingoGame.Timer = 90;
 
                         NewLingoGame.Points = NewLingoGame.Points + 1;
+                        NewLingoGame.Hints = NewLingoGame.Hints + 1;
+
+                        NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
 
                         GuessedWord = true;
                     }
@@ -166,12 +168,39 @@ namespace programmerenVanGamesInCS
                         if (NewLingoGame.CurrentRow <= 4)
                         {
                             NewLingoGame.CurrentRow = NewLingoGame.CurrentRow + 1;
+
+                            CompleteRowWithGuessedLetters(NewLingoGame.CurrentRow);
                         }
                         else
                         {
-                            /* OUT OF SPACE */
+                            NewLingoGame.AcceptingInput = false;
+                            NewLingoGame.TimerPlaying = false;
+                            NewLingoGame.Timer = 90;
+
+                            NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
+
+                            GuessedWord = true;
                         }
                     }
+                }
+            }
+        }
+
+        private void CompleteRowWithGuessedLetters(int Row)
+        {
+            for (int x = 1; x <= 5; x++)
+            {
+                if ((NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) || ((NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) && NewLingoGame.AlreadyGuessedChars[x] == true))
+                {
+                    var foundControl = this.LettersPanel.Controls.Find("Row" + NewLingoGame.CurrentRow.ToString() + "Letter" + x.ToString(), false);
+
+                    if (foundControl.Count() == 1)
+                    {
+                        var LetterBox = foundControl[0];
+
+                        LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
+                    }
+
                 }
             }
         }
@@ -187,7 +216,13 @@ namespace programmerenVanGamesInCS
             }
             else if (NewLingoGame.Timer <= 0)
             {
-                /* !TIME OUT! */
+                NewLingoGame.AcceptingInput = false;
+                NewLingoGame.TimerPlaying = false;
+                NewLingoGame.Timer = 90;
+
+                NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
+
+                GuessedWord = true;
             }
         }
 
@@ -199,11 +234,6 @@ namespace programmerenVanGamesInCS
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ix = ix + 1;
-            Row5Letter1.Text = ix.ToString();
-            Row5Letter2.Text = GuessedWord.ToString();
-
-
             if (GuessedWord == true)
             {
                 GuessedWord = false;
@@ -211,10 +241,62 @@ namespace programmerenVanGamesInCS
                 NewLingoGame.WordNumber = NewLingoGame.WordNumber + 1;
                 WordLabel.Text = "Woord: " + NewLingoGame.WordNumber.ToString();
 
+                HintBtn.Text = "Hint   (" + NewLingoGame.Hints.ToString() + ")";
+
                 ClearScreen();
                 ShowGameScreen();
 
                 bool _Guessed = LingoWord(NewLingoGame);
+            }
+        }
+
+        private void HintBtn_Click(object sender, EventArgs e)
+        {
+            if (NewLingoGame.AcceptingInput == true && NewLingoGame.Hints > 0)
+            {
+                NewLingoGame.AcceptingInput = false;
+
+                for (int x = 1; x <= 5; x++)
+                {
+                    if ( (NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) || ((NewLingoGame.AlreadyGuessedChars.ContainsKey(x)) && NewLingoGame.AlreadyGuessedChars[x] == true) )
+                    {
+                        /* Character is already guessed */
+                    }
+                    else
+                    {
+                        var foundControl = this.LettersPanel.Controls.Find("Row" + NewLingoGame.CurrentRow.ToString() + "Letter" + x.ToString(), false);
+
+                        if (foundControl.Count() == 1)
+                        {
+                            NewLingoGame.Hints = NewLingoGame.Hints - 1;
+                            HintBtn.Text = "Hint   (" + NewLingoGame.Hints.ToString() + ")";
+
+                            var LetterBox = foundControl[0];
+
+                            LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
+
+                            NewLingoGame.AlreadyGuessedChars[x] = true;
+
+
+                            int GuessedCount = NewLingoGame.AlreadyGuessedChars.Count;
+
+                            if (GuessedCount >= 5)
+                            {
+                                NewLingoGame.AcceptingInput = false;
+                                NewLingoGame.TimerPlaying = false;
+                                NewLingoGame.Timer = 90;
+
+                                NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
+
+                                GuessedWord = true;
+                            }
+
+                            break;
+                        }
+                    }
+                }
+
+                NewLingoGame.AcceptingInput = true;
             }
         }
     }

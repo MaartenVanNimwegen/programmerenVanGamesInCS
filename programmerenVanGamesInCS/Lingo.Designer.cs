@@ -83,9 +83,9 @@ namespace programmerenVanGamesInCS
             this.LingoImg.BackColor = System.Drawing.Color.Transparent;
             this.LingoImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LingoImg.BackgroundImage")));
             this.LingoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LingoImg.Location = new System.Drawing.Point(477, 24);
+            this.LingoImg.Location = new System.Drawing.Point(510, 12);
             this.LingoImg.Name = "LingoImg";
-            this.LingoImg.Size = new System.Drawing.Size(784, 224);
+            this.LingoImg.Size = new System.Drawing.Size(974, 274);
             this.LingoImg.TabIndex = 0;
             this.LingoImg.TabStop = false;
             // 
@@ -95,7 +95,7 @@ namespace programmerenVanGamesInCS
             this.WelcomeLabel.BackColor = System.Drawing.Color.Transparent;
             this.WelcomeLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.WelcomeLabel.Location = new System.Drawing.Point(97, 9);
+            this.WelcomeLabel.Location = new System.Drawing.Point(902, 440);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.Size = new System.Drawing.Size(266, 75);
             this.WelcomeLabel.TabIndex = 1;
@@ -107,7 +107,7 @@ namespace programmerenVanGamesInCS
             this.ChooseLanguageLabel.BackColor = System.Drawing.Color.Transparent;
             this.ChooseLanguageLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChooseLanguageLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChooseLanguageLabel.Location = new System.Drawing.Point(74, 84);
+            this.ChooseLanguageLabel.Location = new System.Drawing.Point(879, 515);
             this.ChooseLanguageLabel.Name = "ChooseLanguageLabel";
             this.ChooseLanguageLabel.Size = new System.Drawing.Size(300, 59);
             this.ChooseLanguageLabel.TabIndex = 2;
@@ -121,7 +121,7 @@ namespace programmerenVanGamesInCS
             this.DutchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DutchBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DutchBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DutchBtn.Location = new System.Drawing.Point(20, 185);
+            this.DutchBtn.Location = new System.Drawing.Point(825, 616);
             this.DutchBtn.Name = "DutchBtn";
             this.DutchBtn.Size = new System.Drawing.Size(396, 46);
             this.DutchBtn.TabIndex = 3;
@@ -139,7 +139,7 @@ namespace programmerenVanGamesInCS
             this.EnglishBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnglishBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnglishBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EnglishBtn.Location = new System.Drawing.Point(20, 250);
+            this.EnglishBtn.Location = new System.Drawing.Point(825, 681);
             this.EnglishBtn.Name = "EnglishBtn";
             this.EnglishBtn.Size = new System.Drawing.Size(396, 46);
             this.EnglishBtn.TabIndex = 4;
@@ -157,7 +157,7 @@ namespace programmerenVanGamesInCS
             this.WordInputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WordInputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.WordInputBox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.WordInputBox.Location = new System.Drawing.Point(24, 362);
+            this.WordInputBox.Location = new System.Drawing.Point(24, 368);
             this.WordInputBox.Multiline = true;
             this.WordInputBox.Name = "WordInputBox";
             this.WordInputBox.Size = new System.Drawing.Size(333, 67);
@@ -502,9 +502,9 @@ namespace programmerenVanGamesInCS
             this.GamePanel.Controls.Add(this.WordLabel);
             this.GamePanel.Controls.Add(this.RoundLabel);
             this.GamePanel.Controls.Add(this.WordInputBox);
-            this.GamePanel.Location = new System.Drawing.Point(1001, 427);
+            this.GamePanel.Location = new System.Drawing.Point(1118, 468);
             this.GamePanel.Name = "GamePanel";
-            this.GamePanel.Size = new System.Drawing.Size(383, 452);
+            this.GamePanel.Size = new System.Drawing.Size(383, 464);
             this.GamePanel.TabIndex = 31;
             // 
             // pictureBox1
@@ -513,7 +513,7 @@ namespace programmerenVanGamesInCS
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(342, 96);
             this.pictureBox1.TabIndex = 33;
@@ -527,7 +527,7 @@ namespace programmerenVanGamesInCS
             this.HintBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HintBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HintBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.HintBtn.Location = new System.Drawing.Point(50, 268);
+            this.HintBtn.Location = new System.Drawing.Point(50, 274);
             this.HintBtn.Name = "HintBtn";
             this.HintBtn.Size = new System.Drawing.Size(281, 70);
             this.HintBtn.TabIndex = 33;
@@ -535,6 +535,7 @@ namespace programmerenVanGamesInCS
             this.HintBtn.Text = "Hint   (1)";
             this.HintBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HintBtn.UseVisualStyleBackColor = false;
+            this.HintBtn.Click += new System.EventHandler(this.HintBtn_Click);
             // 
             // TimeLabel
             // 
@@ -542,7 +543,7 @@ namespace programmerenVanGamesInCS
             this.TimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.TimeLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TimeLabel.Location = new System.Drawing.Point(42, 198);
+            this.TimeLabel.Location = new System.Drawing.Point(42, 204);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(300, 49);
             this.TimeLabel.TabIndex = 35;
@@ -555,7 +556,7 @@ namespace programmerenVanGamesInCS
             this.WordLabel.BackColor = System.Drawing.Color.Transparent;
             this.WordLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WordLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.WordLabel.Location = new System.Drawing.Point(42, 149);
+            this.WordLabel.Location = new System.Drawing.Point(42, 155);
             this.WordLabel.Name = "WordLabel";
             this.WordLabel.Size = new System.Drawing.Size(300, 49);
             this.WordLabel.TabIndex = 34;
@@ -568,7 +569,7 @@ namespace programmerenVanGamesInCS
             this.RoundLabel.BackColor = System.Drawing.Color.Transparent;
             this.RoundLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.RoundLabel.Location = new System.Drawing.Point(42, 99);
+            this.RoundLabel.Location = new System.Drawing.Point(42, 105);
             this.RoundLabel.Name = "RoundLabel";
             this.RoundLabel.Size = new System.Drawing.Size(300, 49);
             this.RoundLabel.TabIndex = 33;
@@ -604,7 +605,7 @@ namespace programmerenVanGamesInCS
             this.LettersPanel.Controls.Add(this.Row3Letter2);
             this.LettersPanel.Controls.Add(this.Row3Letter4);
             this.LettersPanel.Controls.Add(this.Row3Letter3);
-            this.LettersPanel.Location = new System.Drawing.Point(353, 310);
+            this.LettersPanel.Location = new System.Drawing.Point(466, 380);
             this.LettersPanel.Name = "LettersPanel";
             this.LettersPanel.Size = new System.Drawing.Size(599, 619);
             this.LettersPanel.TabIndex = 32;
@@ -628,7 +629,7 @@ namespace programmerenVanGamesInCS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1698, 1003);
+            this.ClientSize = new System.Drawing.Size(1899, 1191);
             this.Controls.Add(this.LettersPanel);
             this.Controls.Add(this.GamePanel);
             this.Controls.Add(this.LingoImg);

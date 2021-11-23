@@ -170,5 +170,8 @@
     <None Include="Resources\Bush.png" />
     <None Include="Resources\Bird.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

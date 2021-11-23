@@ -37,8 +37,13 @@ namespace programmerenVanGamesInCS
             myForm.ShowDialog();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void homescreen_Load(object sender, EventArgs e)
         {
+            // - datareader gegevens uitlezen
+            // - sql select statement om data op te halen
+            // - maak gebruik van mysql command
+            // - ga via command en datareader gegevens uitlezen
+            // - loop resultaten en voeg listview items toe
 
         }
     }

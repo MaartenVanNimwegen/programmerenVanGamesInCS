@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace programmerenVanGamesInCS
 {
@@ -15,6 +16,7 @@ namespace programmerenVanGamesInCS
     {
         LingoGame NewLingoGame = new LingoGame();
         bool GuessedWord = false;
+        bool HasSaved = false;
 
         public Lingo()
         {
@@ -22,6 +24,7 @@ namespace programmerenVanGamesInCS
 
             LettersPanel.Visible = false;
             GamePanel.Visible = false;
+            ScorePanel.Visible = false;
         }
 
         private void Lingo_Load(object sender, EventArgs e)
@@ -36,6 +39,7 @@ namespace programmerenVanGamesInCS
             EnglishBtn.Visible = false;
             LettersPanel.Visible = false;
             GamePanel.Visible = false;
+            ScorePanel.Visible = false;
             ClearLetterField();
         }
         private void ClearLetterField()
@@ -62,6 +66,7 @@ namespace programmerenVanGamesInCS
         {
             LettersPanel.Visible = true;
             GamePanel.Visible = true;
+            ScorePanel.Visible = true;
         }
 
         
@@ -156,7 +161,7 @@ namespace programmerenVanGamesInCS
                         NewLingoGame.TimerPlaying = false;
                         NewLingoGame.Timer = 90;
 
-                        NewLingoGame.Points = NewLingoGame.Points + 1;
+                        NewLingoGame.Points = NewLingoGame.Points + 10;
                         NewLingoGame.Hints = NewLingoGame.Hints + 1;
 
                         NewLingoGame.AlreadyGuessedChars = new Dictionary<int, bool>();
@@ -226,11 +231,6 @@ namespace programmerenVanGamesInCS
             }
         }
 
-        private void Row1Letter3_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -240,6 +240,8 @@ namespace programmerenVanGamesInCS
 
                 NewLingoGame.WordNumber = NewLingoGame.WordNumber + 1;
                 WordLabel.Text = "Woord: " + NewLingoGame.WordNumber.ToString();
+
+                PointsLabel.Text = "Punten: " + NewLingoGame.Points.ToString();
 
                 HintBtn.Text = "Hint   (" + NewLingoGame.Hints.ToString() + ")";
 
@@ -298,6 +300,49 @@ namespace programmerenVanGamesInCS
 
                 NewLingoGame.AcceptingInput = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Name = NameBox.Text;
+
+            if (HasSaved == false && Name.Length > 0)
+            {
+
+                string query = "insert into scores (naam, datum, score, game) values ('" + Name + "' , now(), " + NewLingoGame.Points.ToString() + ", 'Lingo')";
+
+                using (MySqlConnection connection = new MySqlConnection())
+                {
+                    connection.ConnectionString = "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        int resultaat = command.ExecuteNonQuery();
+                        if (resultaat == 1)
+                        {
+                            HasSaved = true;
+                            MessageBox.Show("Je score is met succes opgeslagen.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Er is een fout opgetreden, de score is niet opgeslagen");
+                        }
+                    }
+                }
+            }
+            else if (HasSaved == false)
+            {
+                MessageBox.Show("Je hebt dit al opgeslagen!");
+            }
+            else if (Name.Length <= 0)
+            {
+                MessageBox.Show("Vul je naam in!");
+            }
+        }
+
+        private void NameBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

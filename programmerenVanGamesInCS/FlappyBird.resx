@@ -159,41 +159,71 @@
   <metadata name="TimerTick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 461</value>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 26</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 430</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="label4.Text" xml:space="preserve">
+    <value>Naam:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>ExitPanel</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="Naambox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 430</value>
+  </data>
+  <data name="Naambox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 26</value>
+  </data>
+  <data name="Naambox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Naambox.Name" xml:space="preserve">
+    <value>Naambox</value>
+  </data>
+  <data name="&gt;&gt;Naambox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Naambox.Parent" xml:space="preserve">
+    <value>ExitPanel</value>
+  </data>
+  <data name="&gt;&gt;Naambox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold, Italic</value>
+    <value>Microsoft Sans Serif, 19.8000011pt, style=Bold, Italic</value>
   </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 494</value>
+    <value>314, 461</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 61</value>
+    <value>241, 94</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -211,7 +241,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="FinalScore.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,7 +274,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;FinalScore.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -277,7 +307,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Restart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt, style=Bold, Italic</value>
@@ -313,7 +343,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;Restart.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -340,7 +370,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="EXIT.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt, style=Bold, Italic</value>
@@ -373,7 +403,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;EXIT.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -406,7 +436,7 @@
     <value>ExitPanel</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="ExitPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>231, 110</value>
@@ -834,36 +864,6 @@
   <data name="&gt;&gt;Pillar1A.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="object_bush_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="object_bush_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1109, 542</value>
-  </data>
-  <data name="object_bush_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="object_bush_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 102</value>
-  </data>
-  <data name="object_bush_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="object_bush_3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Name" xml:space="preserve">
-    <value>object_bush_3</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;object_bush_3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
   <data name="object_bush_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -924,6 +924,36 @@
   <data name="&gt;&gt;Player.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="Ground.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Ground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 639</value>
+  </data>
+  <data name="Ground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Ground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1300, 132</value>
+  </data>
+  <data name="Ground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Ground.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Ground.Name" xml:space="preserve">
+    <value>Ground</value>
+  </data>
+  <data name="&gt;&gt;Ground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ground.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ground.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <data name="object_bush_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -954,35 +984,35 @@
   <data name="&gt;&gt;object_bush_1.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="Ground.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="object_bush_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Ground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 639</value>
+  <data name="object_bush_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1109, 542</value>
   </data>
-  <data name="Ground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="object_bush_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Ground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1300, 132</value>
+  <data name="object_bush_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 102</value>
   </data>
-  <data name="Ground.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="object_bush_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="Ground.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="object_bush_3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;Ground.Name" xml:space="preserve">
-    <value>Ground</value>
+  <data name="&gt;&gt;object_bush_3.Name" xml:space="preserve">
+    <value>object_bush_3</value>
   </data>
-  <data name="&gt;&gt;Ground.Type" xml:space="preserve">
+  <data name="&gt;&gt;object_bush_3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Ground.Parent" xml:space="preserve">
+  <data name="&gt;&gt;object_bush_3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Ground.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;object_bush_3.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

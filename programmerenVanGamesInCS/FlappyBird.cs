@@ -19,6 +19,7 @@ namespace programmerenVanGamesInCS
         const int gravity = 7;
         private bool display_out = false;
         public int score = 0;
+        public bool HasSaved = false;
 
         // Game load
         public FlappyBird()
@@ -103,6 +104,8 @@ namespace programmerenVanGamesInCS
         {
             if (display_out == true)
             {
+                HasSaved = false;
+
                 ExitPanel.Location = new Point(225, 42);
                 hidePillars();
                 ExitPanel.Show();
@@ -269,31 +272,46 @@ namespace programmerenVanGamesInCS
 
         public void button2_Click(object sender, EventArgs e)
         {
-            string query = "insert into scores (naam, datum, score) values ('maarten' , now(), " + score.ToString() + ")";
+            string naam = Naambox.Text;
 
-            using (MySqlConnection connection = new MySqlConnection())
+            if (HasSaved == false && naam.Length > 0)
             {
-                connection.ConnectionString= "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
-                using (MySqlCommand command = new MySqlCommand(query, connection))
+                string query = "insert into scores (naam, datum, score, game) values ('" + naam + "' , now(), " + score.ToString() + ", 'FlappyBird')";
+
+                using (MySqlConnection connection = new MySqlConnection())
                 {
-                    connection.Open();
-                    int resultaat = command.ExecuteNonQuery();
-                    if (resultaat == 1)
+                    connection.ConnectionString = "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        MessageBox.Show("Je score is met succes opgeslagen.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Er is een fout opgetreden, de score is niet opgeslagen");
+                        connection.Open();
+                        int resultaat = command.ExecuteNonQuery();
+                        if (resultaat == 1)
+                        {
+                            HasSaved = true;
+                            Naambox.Text = "";
+                            MessageBox.Show("Je score is met succes opgeslagen.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Er is een fout opgetreden, de score is niet opgeslagen");
+                        }
                     }
                 }
+            }
+            else if (naam.Length <= 0)
+            {
+                MessageBox.Show("Vul je naam in!");
+            }
+            else if (HasSaved == true)
+            {
+                MessageBox.Show("Je hebt je score al opgeslagen!");
             }
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Naambox_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("test");
+
         }
     }
 }

@@ -13,9 +13,13 @@ namespace programmerenVanGamesInCS
         {
             Timer = 90;
 
-            Words = new List<string>();
-            Words.Add("kamer");
-            AlreadyGuessedChars = new Dictionary<string, bool>();
+            NLWords = new List<string>();
+            NLWords.Add("kamer");
+
+            ENWords = new List<string>();
+            ENWords.Add("rooms");
+
+            AlreadyGuessedChars = new Dictionary<int, bool>();
         }
 
         public int Hints { get; set; }
@@ -29,17 +33,30 @@ namespace programmerenVanGamesInCS
         public int Points { get; set; }
         public int Round { get; set; }
         public int WordNumber { get; set; }
-        public List <string> Words { get; }
-        public Dictionary <string, bool> AlreadyGuessedChars { get; set; }
+        public List<string> NLWords { get; }
+        public List<string> ENWords { get; }
+        public Dictionary <int, bool> AlreadyGuessedChars { get; set; }
 
 
 
 
-        public string NewWord()
+        public string NewWord(string Language)
         {
-            Random rnd = new Random();
-            int Index = rnd.Next(0, Words.Count);
-            string Word = Words.ElementAt(Index);
+            string Word = "";
+
+            if (Language == "nl")
+            {
+                Random rnd = new Random();
+                int Index = rnd.Next(0, NLWords.Count);
+                Word = NLWords.ElementAt(Index);
+            }
+            else if (Language == "en")
+            {
+                Random rnd = new Random();
+                int Index = rnd.Next(0, ENWords.Count);
+                Word = ENWords.ElementAt(Index);
+            }
+            
 
             return Word;
         }
@@ -63,6 +80,7 @@ namespace programmerenVanGamesInCS
                     if (GetCharFromStringWithIndex(Word, i) == C)
                     {
                         IpL["Row" + CurrentRow.ToString() + "Letter" + i.ToString()] = "Correct";
+                        AlreadyGuessedChars[i] = true;
                     }
                     else
                     {
@@ -87,6 +105,28 @@ namespace programmerenVanGamesInCS
                     }
                 }
 
+                /*foreach (var IpLD in IpL)
+                {
+                    if (IpLD.Value == "SemiCorrect")
+                    {
+                        string LetterStr = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
+                        int LetterInt = Int32.Parse(LetterStr);
+
+                        foreach (var IpLD2 in IpL)
+                        {
+                            string LetterStr2 = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
+                            int LetterInt2 = Int32.Parse(LetterStr);
+
+                            if (LetterStr == LetterStr2 && Lette)
+                            {
+
+                            }
+                        }
+                    }
+                }*/
+
+
+
                 AcceptingInput = true;
                 return IpL;
             }
@@ -95,14 +135,6 @@ namespace programmerenVanGamesInCS
 
 
 
-
-        public void StartGame()
-        {
-            /*Thread Timer = new Thread(new ThreadStart(TimerThread));
-            Timer.Start();*/
-
-
-        }
 
 
 
@@ -117,14 +149,6 @@ namespace programmerenVanGamesInCS
             char CharResult = StrResult.ToCharArray()[0];
 
             return CharResult;
-        }
-        private void TimerThread()
-        {
-            while (true)
-            {
-
-                System.Threading.Thread.Sleep(1000);
-            }
         }
     }
 }

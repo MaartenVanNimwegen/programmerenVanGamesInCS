@@ -268,10 +268,10 @@ namespace programmerenVanGamesInCS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection())
+            /*using (SqlConnection conn = new SqlConnection())
             {
                 conn.ConnectionString = "Server=[server_name];Database=[database_name];Trusted_Connection=true";
-            }
+            }*/
         }
     }
 }

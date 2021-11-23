@@ -14,6 +14,8 @@ namespace programmerenVanGamesInCS
     public partial class Lingo : Form
     {
         LingoGame NewLingoGame = new LingoGame();
+        bool GuessedWord = false;
+        int ix = 0;
 
         public Lingo()
         {
@@ -39,9 +41,9 @@ namespace programmerenVanGamesInCS
         }
         private void ClearLetterField()
         {
-            for (int y = 1; y < 5; y++)
+            for (int y = 1; y <= 5; y++)
             {
-                for (int x = 1; x < 5; x++)
+                for (int x = 1; x <= 5; x++)
                 {
                     string LetterBoxStr = "Row" + y.ToString() + "Letter" + x.ToString();
                     var foundControl = this.LettersPanel.Controls.Find(LetterBoxStr, false);
@@ -49,6 +51,8 @@ namespace programmerenVanGamesInCS
                     if(foundControl.Count() == 1)
                     {
                         foundControl[0].Text = ".";
+                        foundControl[0].BackColor = Color.FromArgb(51, 114, 196);
+
                     }
                 }
             }
@@ -66,7 +70,8 @@ namespace programmerenVanGamesInCS
         {
             ClearLetterField();
 
-            string NextWord = Lingo.NewWord();
+            string Language = NewLingoGame.Language;
+            string NextWord = Lingo.NewWord(Language);
 
             string FirstLetter = NextWord.Substring(0, 1);
             Row1Letter1.Text = FirstLetter;
@@ -82,35 +87,23 @@ namespace programmerenVanGamesInCS
             
             return false;
         }
-        private void LingoRound(LingoGame Lingo)
+        private void LingoRounds(string Language)
         {
-            bool Guessed = LingoWord(Lingo);
+            ClearScreen();
+            ShowGameScreen();
+
+            NewLingoGame.Language = Language;
+
+            bool _Guessed = LingoWord(NewLingoGame);
         }
 
         private void DutchBtn_Click(object sender, EventArgs e)
         {
-            ClearScreen();
-            ShowGameScreen();
-
-            LingoGame Lingo = NewGame("nl");
-
-            LingoRound(Lingo);
+            LingoRounds("nl");
         }
         private void EnglishBtn_Click(object sender, EventArgs e)
         {
-            ClearScreen();
-            ShowGameScreen();
-
-            LingoGame Lingo = NewGame("en");
-
-            LingoRound(Lingo);
-        }
-
-        private LingoGame NewGame(string Language)
-        {
-            NewLingoGame.Language = Language;
-
-            return NewLingoGame;
+            LingoRounds("en");
         }
 
         private void WordInputBox_TextChanged(object sender, EventArgs e)
@@ -120,6 +113,8 @@ namespace programmerenVanGamesInCS
             
             if (StrLen == 5)
             {
+                WordInputBox.Text = "";
+
                 Dictionary<string, string> IpL = NewLingoGame.GuessWord(Input);
                 int i = 0;
 
@@ -142,7 +137,6 @@ namespace programmerenVanGamesInCS
                                 if (LetterInfo.Value == "Correct")
                                 {
                                     LetterBox.BackColor = Color.FromArgb(207, 47, 47);
-                                    NewLingoGame.AlreadyGuessedChars[im1.ToString()] = true;
                                 }
                                 else if (LetterInfo.Value == "SemiCorrect")
                                 {
@@ -159,8 +153,13 @@ namespace programmerenVanGamesInCS
 
                     if (Input == NewLingoGame.CurrentWord)
                     {
-                        NewLingoGame.TimerPlaying = false;
                         NewLingoGame.AcceptingInput = false;
+                        NewLingoGame.TimerPlaying = false;
+                        NewLingoGame.Timer = 90;
+
+                        NewLingoGame.Points = NewLingoGame.Points + 1;
+
+                        GuessedWord = true;
                     }
                     else
                     {
@@ -170,7 +169,7 @@ namespace programmerenVanGamesInCS
                         }
                         else
                         {
-                            /* NEXT WORD */
+                            /* OUT OF SPACE */
                         }
                     }
                 }
@@ -195,6 +194,28 @@ namespace programmerenVanGamesInCS
         private void Row1Letter3_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            ix = ix + 1;
+            Row5Letter1.Text = ix.ToString();
+            Row5Letter2.Text = GuessedWord.ToString();
+
+
+            if (GuessedWord == true)
+            {
+                GuessedWord = false;
+
+                NewLingoGame.WordNumber = NewLingoGame.WordNumber + 1;
+                WordLabel.Text = "Woord: " + NewLingoGame.WordNumber.ToString();
+
+                ClearScreen();
+                ShowGameScreen();
+
+                bool _Guessed = LingoWord(NewLingoGame);
+            }
         }
     }
 }

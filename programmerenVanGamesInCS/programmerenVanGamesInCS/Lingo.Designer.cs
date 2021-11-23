@@ -70,6 +70,7 @@ namespace programmerenVanGamesInCS
             this.RoundLabel = new System.Windows.Forms.Label();
             this.LettersPanel = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LingoImg)).BeginInit();
             this.GamePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -614,6 +615,12 @@ namespace programmerenVanGamesInCS
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Lingo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -687,5 +694,6 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label RoundLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

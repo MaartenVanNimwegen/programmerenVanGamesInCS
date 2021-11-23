@@ -36,5 +36,10 @@ namespace programmerenVanGamesInCS
             FlappyBird myForm = new FlappyBird();
             myForm.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

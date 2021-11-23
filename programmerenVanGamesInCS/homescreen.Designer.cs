@@ -37,13 +37,11 @@ namespace programmerenVanGamesInCS
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.naam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.score = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.game = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Naam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Datum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Score = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Game = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button1
@@ -140,64 +138,36 @@ namespace programmerenVanGamesInCS
             this.label5.TabIndex = 7;
             this.label5.Text = "Game";
             // 
-            // dataGridView1
+            // listView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.naam,
-            this.datum,
-            this.score,
-            this.game});
-            this.dataGridView1.Location = new System.Drawing.Point(46, 122);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(281, 246);
-            this.dataGridView1.TabIndex = 8;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Naam,
+            this.Datum,
+            this.Score,
+            this.Game});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(46, 128);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(281, 240);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // id
+            // Naam
             // 
-            this.id.HeaderText = "id";
-            this.id.MinimumWidth = 2;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 125;
+            this.Naam.Text = "Naam";
             // 
-            // naam
+            // Datum
             // 
-            this.naam.HeaderText = "Naam";
-            this.naam.MinimumWidth = 6;
-            this.naam.Name = "naam";
-            this.naam.ReadOnly = true;
-            this.naam.Width = 125;
+            this.Datum.Text = "Datum";
             // 
-            // datum
+            // Score
             // 
-            this.datum.HeaderText = "Datum";
-            this.datum.MinimumWidth = 6;
-            this.datum.Name = "datum";
-            this.datum.ReadOnly = true;
-            this.datum.Width = 125;
+            this.Score.Text = "Score";
             // 
-            // score
+            // Game
             // 
-            this.score.HeaderText = "Score";
-            this.score.MinimumWidth = 6;
-            this.score.Name = "score";
-            this.score.ReadOnly = true;
-            this.score.Width = 125;
-            // 
-            // game
-            // 
-            this.game.HeaderText = "Game";
-            this.game.MinimumWidth = 6;
-            this.game.Name = "game";
-            this.game.ReadOnly = true;
-            this.game.Width = 125;
+            this.Game.Text = "Game";
             // 
             // homescreen
             // 
@@ -205,7 +175,7 @@ namespace programmerenVanGamesInCS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(770, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -218,7 +188,7 @@ namespace programmerenVanGamesInCS
             this.Name = "homescreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "programmerenVanGamesInCS";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.homescreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,12 +204,11 @@ namespace programmerenVanGamesInCS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn naam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datum;
-        private System.Windows.Forms.DataGridViewTextBoxColumn score;
-        private System.Windows.Forms.DataGridViewTextBoxColumn game;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Naam;
+        private System.Windows.Forms.ColumnHeader Datum;
+        private System.Windows.Forms.ColumnHeader Score;
+        private System.Windows.Forms.ColumnHeader Game;
     }
 }
 

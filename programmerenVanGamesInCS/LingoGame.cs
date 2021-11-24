@@ -254,10 +254,8 @@ namespace programmerenVanGamesInCS
             NLWords.Add("vindt");
             NLWords.Add("vloot");
             NLWords.Add("verte");
-            NLWords.Add("vijfde");
             NLWords.Add("vegen");
             NLWords.Add("vuren");
-            NLWords.Add("vroeg");
             NLWords.Add("vorig");
             NLWords.Add("vraag");
             NLWords.Add("vulde");
@@ -341,11 +339,32 @@ namespace programmerenVanGamesInCS
             NLWords.Add("zwemt");
 
 
-
-
-
             ENWords = new List<string>();
-            ENWords.Add("rooms");
+            ENWords.Add("babes");
+            ENWords.Add("cabin");
+            ENWords.Add("cable");
+            ENWords.Add("daddy");
+            ENWords.Add("eager");
+            ENWords.Add("eagle");
+            ENWords.Add("early");
+            ENWords.Add("faces");
+            ENWords.Add("faced");
+            ENWords.Add("gaged");
+            ENWords.Add("habit");
+            ENWords.Add("hacks");
+            ENWords.Add("horny");
+            ENWords.Add("horns");
+            ENWords.Add("label");
+            ENWords.Add("labor");
+            ENWords.Add("rabid");
+            ENWords.Add("saber");
+            ENWords.Add("utter");
+            ENWords.Add("vague");
+            ENWords.Add("wacky");
+            ENWords.Add("wacks");
+            ENWords.Add("xenon");
+            ENWords.Add("yacht");
+
 
             AlreadyGuessedChars = new Dictionary<int, bool>();
         }
@@ -433,25 +452,19 @@ namespace programmerenVanGamesInCS
                     }
                 }
 
-                /*foreach (var IpLD in IpL)
+                foreach (var IpLD in IpL)
                 {
                     if (IpLD.Value == "SemiCorrect")
                     {
                         string LetterStr = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
                         int LetterInt = Int32.Parse(LetterStr);
 
-                        foreach (var IplD2 in IpL)
+                        foreach (var CorrectData in AlreadyGuessedChars)
                         {
-                            if (IplD2.Value != "SemiCorrect")
-                            {
-                                string LetterStr2 = GetCharFromStringWithIndex(IpLD.Key, 11).ToString();
-                                int LetterInt2 = Int32.Parse(LetterStr);
-
-
-                            }
+                            
                         }
                     }
-                } */
+                }
 
 
 

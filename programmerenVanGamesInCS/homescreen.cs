@@ -39,6 +39,45 @@ namespace programmerenVanGamesInCS
 
         private void homescreen_Load(object sender, EventArgs e)
         {
+            string query = "SELECT * FROM scores";
+
+            using (MySqlConnection connection = new MySqlConnection())
+            {
+                connection.ConnectionString = "Data Source = localhost; Initial Catalog = testdatabase; User ID = root; Password = ";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    connection.Open();
+                    //int resultaat = command.ExecuteNonQuery();
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        while(reader.Read())
+                        {
+                            ListViewItem myItem = new ListViewItem(new string[]
+                            {
+                                reader.GetString(1).ToString(),
+                                reader.GetString(2).ToString(),
+                                reader.GetString(3).ToString(), 
+                                reader.GetString(4).ToString()
+                            });
+
+
+                            lvHighscores.Items.Add(myItem);
+
+
+                            //Console.WriteLine("{0}\t{1}", reader.GetInt32(0),
+                            //    reader.GetString(1));
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Geen highscore resultatgen gevonden.");
+                    }
+                    reader.Close();
+
+                }
+            }
             // - datareader gegevens uitlezen
             // - sql select statement om data op te halen
             // - maak gebruik van mysql command

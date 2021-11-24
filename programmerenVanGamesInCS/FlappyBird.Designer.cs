@@ -34,6 +34,7 @@ namespace programmerenVanGamesInCS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.TimerTick = new System.Windows.Forms.Timer(this.components);
             this.ExitPanel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.Naambox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.FinalScore = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@ namespace programmerenVanGamesInCS
             this.object_bush_2 = new System.Windows.Forms.PictureBox();
             this.Player = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.object_bush_1 = new System.Windows.Forms.PictureBox();
             this.object_bush_3 = new System.Windows.Forms.PictureBox();
             FormBackground = new System.Windows.Forms.PictureBox();
@@ -117,6 +117,11 @@ namespace programmerenVanGamesInCS
             this.ExitPanel.Controls.Add(this.label1);
             resources.ApplyResources(this.ExitPanel, "ExitPanel");
             this.ExitPanel.Name = "ExitPanel";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // Naambox
             // 
@@ -288,11 +293,6 @@ namespace programmerenVanGamesInCS
             this.Ground.Name = "Ground";
             this.Ground.TabStop = false;
             this.Ground.Click += new System.EventHandler(this.Ground_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // object_bush_1
             // 

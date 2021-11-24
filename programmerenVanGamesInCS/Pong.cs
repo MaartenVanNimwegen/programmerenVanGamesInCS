@@ -27,58 +27,99 @@ namespace programmerenVanGamesInCS
         int speed_Top;
         int speed_Left;
 
-        bool up = false;
-        bool down = false;
+        bool upLeft = false;
+        bool downLeft = false;
+        bool upRight = false;
+        bool downRight = false;
         bool game = false;
 
         Random r = new Random();
-        private void Pressed(object sender, KeyEventArgs e)
+        private void PressedLeft(object sender, KeyEventArgs e)
         {
             if (game)
             {
-                if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
+                if (e.KeyCode == Keys.W)
                 {
-                    up = true;
+                    upLeft = true;
                 }
-                else if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
+                else if (e.KeyCode == Keys.S)
                 {
-                    down = true;
+                    downLeft = true;
                 }
                 timer1.Start(); 
             }
         }
-        private void MovePaddle(object sender, EventArgs e)
+        private void MovePaddleLeft(object sender, EventArgs e)
         {
-            if (up && Player.Location.Y > 0)
+            if (upLeft && PlayerLeft.Location.Y > 0)
             {
-                Player.Top -= 3; 
+                PlayerLeft.Top -= 3; 
             }
-            else if (down && Player.Location.Y < limit_Pad)
+            else if (downLeft && PlayerLeft.Location.Y < limit_Pad)
             {
-                Player.Top += 3;
+                PlayerLeft.Top += 3;
             }
         }
-        private void Released(object sender, KeyEventArgs e)
+        private void ReleasedLeft(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
+            if (e.KeyCode == Keys.W)
             {
-                up = false; 
+                upLeft = false; 
             }
-            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.S)
+            else if (e.KeyCode == Keys.S)
             {
-                down = false; 
+                downLeft = false; 
+            }
+            timer1.Stop();
+        }
+
+        private void PressedRight(object sender, KeyEventArgs e)
+        {
+            if (game)
+            {
+                if (e.KeyCode == Keys.Up)
+                {
+                    upRight = true;
+                }
+                else if (e.KeyCode == Keys.Down)
+                {
+                    downRight = true;
+                }
+                timer1.Start();
+            }
+        }
+        private void MovePaddleRight(object sender, EventArgs e)
+        {
+            if (upRight && PlayerRight.Location.Y > 0)
+            {
+                PlayerRight.Top -= 3;
+            }
+            else if (downRight && PlayerRight.Location.Y < limit_Pad)
+            {
+                PlayerRight.Top += 3;
+            }
+        }
+        private void ReleasedRight(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Up)
+            {
+                upRight = false;
+            }
+            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+            {
+                downRight = false;
             }
             timer1.Stop();
         }
         private void MoveBall(object sender, EventArgs e)
         {
-            if (Ball.Bounds.IntersectsWith(Player.Bounds))
+            if (Ball.Bounds.IntersectsWith(PlayerLeft.Bounds))
             {
-                Collision(Player);
+                Collision(PlayerLeft);
             }
-            else if (Ball.Bounds.IntersectsWith(PC.Bounds))
+            else if (Ball.Bounds.IntersectsWith(PlayerRight.Bounds))
             {
-                Collision(PC);
+                Collision(PlayerRight);
             }
             HitBorder();
             BallLeftField();
@@ -164,12 +205,12 @@ namespace programmerenVanGamesInCS
                 EndGame();
             }
 
-            if (Ball.Location.X < 0 - Player.Width && Ball.Location.X < this.Width / 2)
+            if (Ball.Location.X < 0 - PlayerLeft.Width && Ball.Location.X < this.Width / 2)
             {
                 NewPoint(5);
                 ComputerWon(); 
             }
-            else if (Ball.Location.X > PC.Location.X + PC.Width && Ball.Location.X > this.Width / 2)
+            else if (Ball.Location.X > PlayerRight.Location.X + PlayerRight.Width && Ball.Location.X > this.Width / 2)
             {
                 NewPoint(-5);
                 PlayerWon(); 
@@ -186,7 +227,7 @@ namespace programmerenVanGamesInCS
             }
             else if (Ball.Location.X > this.Width / 2)
             {
-                if (Ball.Location.X > PC.Location.X + (Ball.Width /3))
+                if (Ball.Location.X > PlayerRight.Location.X + (Ball.Width /3))
                 {
                     speed_Left *= -1;
                 }
@@ -208,25 +249,7 @@ namespace programmerenVanGamesInCS
             Ball.Top += speed_Top;
             Ball.Left += speed_Left; 
         }
-        private void Computer(object sender, EventArgs e)
-        {
-            if (PC.Location.Y <= 0)
-            {
-                PC.Location = new Point(PC.Location.X, 0); 
-            }
-            else if (PC.Location.Y >= limit_Pad)
-            {
-                PC.Location = new Point(PC.Location.X, limit_Pad);
-            }
-            if (Ball.Location.Y < PC.Top + (PC.Height / 2))
-            {
-                PC.Top -= 3;
-            }
-            else if (Ball.Location.Y > PC.Top + (PC.Height / 2))
-            {
-                PC.Top += 3;
-            }
-        }
+
         private void PlayerWon()
         {
             player_won++;
@@ -246,10 +269,11 @@ namespace programmerenVanGamesInCS
             timer2.Start();
             timer3.Start(); 
         }
+
         private void EndGame()
         {
-            Player.Location = new Point(0, 75);
-            PC.Location = new Point(454, 75);
+            PlayerLeft.Location = new Point(0, 75);
+            PlayerRight.Location = new Point(454, 75);
             game = false;
             player_won = 0;
             computer_won = 0;

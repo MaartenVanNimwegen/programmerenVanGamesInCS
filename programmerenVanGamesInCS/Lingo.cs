@@ -78,7 +78,7 @@ namespace programmerenVanGamesInCS
             string NextWord = Lingo.NewWord(Language);
 
             string FirstLetter = NextWord.Substring(0, 1);
-            Row1Letter1.Text = FirstLetter;
+            Row1Letter1.Text = FirstLetter.ToUpper();
 
             Lingo.CurrentWord = NextWord;
             Lingo.CurrentRow = 1;
@@ -136,7 +136,7 @@ namespace programmerenVanGamesInCS
                             {
                                 var LetterBox = foundControl[0];
                                 int im1 = i - 1;
-                                LetterBox.Text = Input.Substring(im1, 1);
+                                LetterBox.Text = Input.Substring(im1, 1).ToUpper();
 
                                 if (LetterInfo.Value == "Correct")
                                 {
@@ -203,7 +203,7 @@ namespace programmerenVanGamesInCS
                     {
                         var LetterBox = foundControl[0];
 
-                        LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
+                        LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1).ToUpper();
                     }
 
                 }
@@ -275,7 +275,7 @@ namespace programmerenVanGamesInCS
 
                             var LetterBox = foundControl[0];
 
-                            LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1);
+                            LetterBox.Text = NewLingoGame.CurrentWord.Substring(x - 1, 1).ToUpper();
 
                             NewLingoGame.AlreadyGuessedChars[x] = true;
 

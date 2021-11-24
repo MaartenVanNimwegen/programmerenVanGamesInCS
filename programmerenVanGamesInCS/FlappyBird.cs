@@ -57,13 +57,13 @@ namespace programmerenVanGamesInCS
 
             // Increase dificulty every 10 points
             if ((score / 2) % 3 == 0 && score != 0)
-                speed += 1;
+                speed += 0;
         }
 
         // Move the bushes to the left and reset them if they leave the game space
         private void moveBushes()
         {
-            int bush_speed = 10;
+            int bush_speed = 1;
 
             // Move object 1
             if (object_bush_1.Location.X < 0)

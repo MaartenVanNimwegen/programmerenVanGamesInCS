@@ -52,22 +52,18 @@ namespace programmerenVanGamesInCS
 
                     if (reader.HasRows)
                     {
-                        while(reader.Read())
+                        while (reader.Read())
                         {
                             ListViewItem myItem = new ListViewItem(new string[]
                             {
                                 reader.GetString(1).ToString(),
                                 reader.GetString(2).ToString(),
-                                reader.GetString(3).ToString(), 
+                                reader.GetString(3).ToString(),
                                 reader.GetString(4).ToString()
                             });
 
 
                             lvHighscores.Items.Add(myItem);
-
-
-                            //Console.WriteLine("{0}\t{1}", reader.GetInt32(0),
-                            //    reader.GetString(1));
                         }
                     }
                     else
@@ -78,11 +74,6 @@ namespace programmerenVanGamesInCS
 
                 }
             }
-            // - datareader gegevens uitlezen
-            // - sql select statement om data op te halen
-            // - maak gebruik van mysql command
-            // - ga via command en datareader gegevens uitlezen
-            // - loop resultaten en voeg listview items toe
 
         }
     }

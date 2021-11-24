@@ -15,9 +15,13 @@ namespace programmerenVanGamesInCS
         public Pong()
         {
             InitializeComponent();
+
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PressedRight);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ReleasedRight);
+
             this.KeyPreview = true;
         }
-        const int limit_Pad = 170;
+        const int limit_Pad = 208;
         const int limit_Ball = 245;
         const int x = 227, y = 120;
 
@@ -38,79 +42,108 @@ namespace programmerenVanGamesInCS
         {
             if (game)
             {
-                if (e.KeyCode == Keys.W)
-                {
-                    upLeft = true;
-                }
-                else if (e.KeyCode == Keys.S)
-                {
-                    downLeft = true;
-                }
-                timer1.Start(); 
-            }
-        }
-        private void MovePaddleLeft(object sender, EventArgs e)
-        {
-            if (upLeft && PlayerLeft.Location.Y > 0)
-            {
-                PlayerLeft.Top -= 3; 
-            }
-            else if (downLeft && PlayerLeft.Location.Y < limit_Pad)
-            {
-                PlayerLeft.Top += 3;
-            }
-        }
-        private void ReleasedLeft(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.W)
-            {
-                upLeft = false; 
-            }
-            else if (e.KeyCode == Keys.S)
-            {
-                downLeft = false; 
-            }
-            timer1.Stop();
-        }
 
+                switch (e.KeyCode)
+                {
+                    case Keys.W:
+                        upLeft = true;
+                        timer1.Start();
+                        break;
+                    case Keys.S:
+                        downLeft = true;
+                        timer1.Start();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
         private void PressedRight(object sender, KeyEventArgs e)
         {
             if (game)
             {
-                if (e.KeyCode == Keys.Up)
-                {
-                    upRight = true;
+
+                switch (e.KeyCode)
+                { 
+                    case Keys.Up:
+                        upRight = true;
+                        timer3.Start();
+                        break;
+                    case Keys.Down:
+                        downRight = true;
+                        timer3.Start();
+                        break;
+
+                    default:
+                        break;
                 }
-                else if (e.KeyCode == Keys.Down)
+            }
+        }
+        private void MovePaddleLeft(object sender, EventArgs e)
+        {
+            if (game)
+            {
+                if (upLeft && PlayerLeft.Location.Y > 0)
                 {
-                    downRight = true;
+                    PlayerLeft.Top -= 3;
                 }
-                timer1.Start();
+                else if (downLeft && PlayerLeft.Location.Y < limit_Pad)
+                {
+                    PlayerLeft.Top += 3;
+                }
             }
         }
         private void MovePaddleRight(object sender, EventArgs e)
         {
-            if (upRight && PlayerRight.Location.Y > 0)
+            if (game)
             {
-                PlayerRight.Top -= 3;
-            }
-            else if (downRight && PlayerRight.Location.Y < limit_Pad)
-            {
-                PlayerRight.Top += 3;
+                if (upRight && PlayerRight.Location.Y > 0)
+                {
+                    PlayerRight.Top -= 3;
+                }
+                else if (downRight && PlayerRight.Location.Y < limit_Pad)
+                {
+                    PlayerRight.Top += 3;
+                }
             }
         }
+
+        private void ReleasedLeft(object sender, KeyEventArgs e)
+        {
+            if (game)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.W:
+                        upLeft = false;
+                        timer1.Stop();
+                        break;
+                    case Keys.S:
+                        downLeft = false;
+                        timer1.Stop();
+                        break;
+                }
+            }
+        }
+
         private void ReleasedRight(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Up)
+            if (game)
             {
-                upRight = false;
+                switch (e.KeyCode)
+                {
+                    case Keys.Up:
+                        upRight = false;
+                        timer3.Stop();
+                        break;
+                    case Keys.Down:
+                        downRight = false;
+                        timer3.Stop();
+                        break;
+                }
             }
-            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
-            {
-                downRight = false;
-            }
-            timer1.Stop();
         }
+        
         private void MoveBall(object sender, EventArgs e)
         {
             if (Ball.Bounds.IntersectsWith(PlayerLeft.Bounds))
@@ -125,6 +158,7 @@ namespace programmerenVanGamesInCS
             BallLeftField();
             BallMoves();
         }
+
         private void Collision(PictureBox Paddle) 
         {
             switch (true)

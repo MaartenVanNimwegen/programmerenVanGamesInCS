@@ -317,7 +317,6 @@ namespace programmerenVanGamesInCS
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CausesValidation = false;
-            this.Controls.Add(this.Player);
             this.Controls.Add(this.ScorePosition);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PILLAR6B);
@@ -335,6 +334,7 @@ namespace programmerenVanGamesInCS
             this.Controls.Add(this.ExitPanel);
             this.Controls.Add(this.object_bush_3);
             this.Controls.Add(this.object_bush_2);
+            this.Controls.Add(this.Player);
             this.Controls.Add(this.object_bush_1);
             this.Controls.Add(this.Ground);
             this.Controls.Add(FormBackground);

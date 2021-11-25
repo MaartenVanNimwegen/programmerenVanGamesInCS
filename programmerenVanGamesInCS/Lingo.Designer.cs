@@ -724,7 +724,6 @@ namespace programmerenVanGamesInCS
             this.NameBox.Size = new System.Drawing.Size(88, 25);
             this.NameBox.TabIndex = 5;
             this.NameBox.TabStop = false;
-            this.NameBox.UseWaitCursor = true;
             this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
             // 
             // Lingo

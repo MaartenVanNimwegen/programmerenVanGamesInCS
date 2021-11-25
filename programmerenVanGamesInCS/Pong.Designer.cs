@@ -46,7 +46,7 @@
             // 
             // Ball
             // 
-            this.Ball.BackColor = System.Drawing.Color.Black;
+            this.Ball.BackColor = System.Drawing.Color.White;
             this.Ball.Location = new System.Drawing.Point(340, 185);
             this.Ball.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Ball.Name = "Ball";
@@ -57,7 +57,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(244, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -68,7 +70,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(339, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -79,7 +83,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(430, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -115,23 +121,23 @@
             // 
             // PlayerLeft
             // 
-            this.PlayerLeft.BackColor = System.Drawing.Color.Aqua;
+            this.PlayerLeft.BackColor = System.Drawing.Color.White;
             this.PlayerLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PlayerLeft.Location = new System.Drawing.Point(0, 115);
+            this.PlayerLeft.Location = new System.Drawing.Point(0, 153);
             this.PlayerLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PlayerLeft.Name = "PlayerLeft";
-            this.PlayerLeft.Size = new System.Drawing.Size(44, 137);
+            this.PlayerLeft.Size = new System.Drawing.Size(20, 80);
             this.PlayerLeft.TabIndex = 7;
             this.PlayerLeft.TabStop = false;
             // 
             // PlayerRight
             // 
-            this.PlayerRight.BackColor = System.Drawing.Color.Red;
+            this.PlayerRight.BackColor = System.Drawing.Color.White;
             this.PlayerRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PlayerRight.Location = new System.Drawing.Point(681, 115);
+            this.PlayerRight.Location = new System.Drawing.Point(706, 153);
             this.PlayerRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PlayerRight.Name = "PlayerRight";
-            this.PlayerRight.Size = new System.Drawing.Size(44, 137);
+            this.PlayerRight.Size = new System.Drawing.Size(20, 80);
             this.PlayerRight.TabIndex = 8;
             this.PlayerRight.TabStop = false;
             // 
@@ -139,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(726, 402);
             this.Controls.Add(this.PlayerRight);
             this.Controls.Add(this.PlayerLeft);
@@ -151,8 +157,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Pong";
             this.Text = "Pong";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PressedRight);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ReleasedRight);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PressedLeft);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ReleasedLeft);
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).EndInit();

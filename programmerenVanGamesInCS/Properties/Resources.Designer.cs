@@ -73,6 +73,16 @@ namespace programmerenVanGamesInCS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background1 {
+            get {
+                object obj = ResourceManager.GetObject("Background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bird {
             get {
                 object obj = ResourceManager.GetObject("Bird", resourceCulture);
@@ -83,9 +93,29 @@ namespace programmerenVanGamesInCS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bird1 {
+            get {
+                object obj = ResourceManager.GetObject("Bird1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bush {
             get {
                 object obj = ResourceManager.GetObject("Bush", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bush1 {
+            get {
+                object obj = ResourceManager.GetObject("Bush1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

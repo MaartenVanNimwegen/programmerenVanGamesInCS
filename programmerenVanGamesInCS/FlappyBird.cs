@@ -16,7 +16,7 @@ namespace programmerenVanGamesInCS
         // Variables
         private bool is_running = false;
         private int speed = 10;
-        const int gravity = 7;
+        const int gravity = 5;
         private bool display_out = false;
         public int score = 0;
         public bool HasSaved = false;
@@ -173,7 +173,7 @@ namespace programmerenVanGamesInCS
                 top.Location = body.Location;
                 top.Left -= 20;
 
-                body.Height = randnumber.Next(0, 220);
+                body.Height = randnumber.Next(80, 260);
 
                 if (up)
                     top.Location = new Point(top.Location.X, body.Height - 10);
@@ -244,32 +244,10 @@ namespace programmerenVanGamesInCS
             PILLAR6A.Location = new Point(PILLAR6A.Location.X + 600, PILLAR6A.Location.Y);
             PILLAR6B.Location = new Point(PILLAR6B.Location.X + 600, PILLAR6B.Location.Y);
         }
-
-        private void object_bush_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Player_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void EXIT_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-        private void Ground_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormBackground_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void button2_Click(object sender, EventArgs e)
         {
             string naam = Naambox.Text;
@@ -306,11 +284,6 @@ namespace programmerenVanGamesInCS
             {
                 MessageBox.Show("Je hebt je score al opgeslagen!");
             }
-
-        }
-
-        private void Naambox_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }

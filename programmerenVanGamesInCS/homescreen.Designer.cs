@@ -48,10 +48,10 @@ namespace programmerenVanGamesInCS
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(575, 82);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(431, 67);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(261, 92);
+            this.button1.Size = new System.Drawing.Size(196, 75);
             this.button1.TabIndex = 0;
             this.button1.Text = "Speel Lingo";
             this.button1.UseVisualStyleBackColor = false;
@@ -61,10 +61,10 @@ namespace programmerenVanGamesInCS
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(575, 180);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(431, 146);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 92);
+            this.button2.Size = new System.Drawing.Size(196, 75);
             this.button2.TabIndex = 1;
             this.button2.Text = "Speel Pong";
             this.button2.UseVisualStyleBackColor = false;
@@ -74,10 +74,10 @@ namespace programmerenVanGamesInCS
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(575, 276);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(431, 224);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(261, 92);
+            this.button3.Size = new System.Drawing.Size(196, 75);
             this.button3.TabIndex = 2;
             this.button3.Text = "Speel Flappy Bird";
             this.button3.UseVisualStyleBackColor = false;
@@ -87,10 +87,9 @@ namespace programmerenVanGamesInCS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(49, 82);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(37, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 36);
+            this.label1.Size = new System.Drawing.Size(151, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "High Scores:";
             // 
@@ -98,10 +97,9 @@ namespace programmerenVanGamesInCS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(50, 120);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(38, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 25);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Naam";
             // 
@@ -109,10 +107,9 @@ namespace programmerenVanGamesInCS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(199, 120);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(149, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
+            this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Score";
             // 
@@ -120,10 +117,9 @@ namespace programmerenVanGamesInCS
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(122, 120);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(92, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 25);
+            this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Datum";
             // 
@@ -131,10 +127,9 @@ namespace programmerenVanGamesInCS
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(271, 120);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(203, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 25);
+            this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Game";
             // 
@@ -146,9 +141,10 @@ namespace programmerenVanGamesInCS
             this.Score,
             this.Game});
             this.lvHighscores.HideSelection = false;
-            this.lvHighscores.Location = new System.Drawing.Point(55, 148);
+            this.lvHighscores.Location = new System.Drawing.Point(41, 120);
+            this.lvHighscores.Margin = new System.Windows.Forms.Padding(2);
             this.lvHighscores.Name = "lvHighscores";
-            this.lvHighscores.Size = new System.Drawing.Size(447, 220);
+            this.lvHighscores.Size = new System.Drawing.Size(336, 180);
             this.lvHighscores.TabIndex = 8;
             this.lvHighscores.UseCompatibleStateImageBehavior = false;
             this.lvHighscores.View = System.Windows.Forms.View.Details;
@@ -173,10 +169,10 @@ namespace programmerenVanGamesInCS
             // 
             // homescreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(878, 455);
+            this.ClientSize = new System.Drawing.Size(658, 370);
             this.Controls.Add(this.lvHighscores);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -186,7 +182,7 @@ namespace programmerenVanGamesInCS
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "homescreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "programmerenVanGamesInCS";

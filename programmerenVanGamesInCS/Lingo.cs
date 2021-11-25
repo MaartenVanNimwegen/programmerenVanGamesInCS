@@ -308,7 +308,6 @@ namespace programmerenVanGamesInCS
 
             if (HasSaved == false && Name.Length > 0)
             {
-
                 string query = "insert into scores (naam, datum, score, game) values ('" + Name + "' , now(), " + NewLingoGame.Points.ToString() + ", 'Lingo')";
 
                 using (MySqlConnection connection = new MySqlConnection())
@@ -330,7 +329,7 @@ namespace programmerenVanGamesInCS
                     }
                 }
             }
-            else if (HasSaved == false)
+            else if (HasSaved == true)
             {
                 MessageBox.Show("Je hebt dit al opgeslagen!");
             }
